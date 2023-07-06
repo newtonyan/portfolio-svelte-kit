@@ -14,7 +14,7 @@
 			children: [
 				{ title: 'Introduction', slug: 'introduction' },
 				{ title: 'Work experience', slug: 'work-experience' },
-				{ title: 'Volunteer Experience', slug: 'volunteer-experience' }
+				{ title: 'Volunteering', slug: 'volunteering' }
 			]
 		},
 		{
@@ -31,24 +31,26 @@
 
 <div class="min-h-screen bg-stone-100">
 	<Header />
-	<div class="mx-auto flex max-w-7xl justify-between gap-16 px-4 py-12">
-		<aside class="hidden lg:sticky lg:top-[6.5rem] lg:block lg:h-0">
-			<Nav {menuGroups} />
-			<div class="mt-8 flex gap-2">
-				<a
-					href="https://www.linkedin.com/in/newton-yan-7a6722199/"
-					target="_blank"
-					rel="nofollow noreferrer"
-				>
-					<Icon class="text-4xl" icon={linkedinIcon} />
-				</a>
-				<a href="https://github.com/newtonyan" target="_blank" rel="nofollow noreferrer">
-					<Icon class="text-4xl" icon={githubIcon} />
-				</a>
+	<div class="mx-auto flex max-w-7xl justify-center gap-16 px-4 py-12 lg:justify-between">
+		<aside class="hidden lg:block">
+			<div class="sticky top-[6.5rem] h-0">
+				<Nav {menuGroups} />
+				<div class="mt-8 flex gap-2">
+					<a
+						href="https://www.linkedin.com/in/newton-yan-7a6722199/"
+						target="_blank"
+						rel="nofollow noreferrer"
+					>
+						<Icon class="text-4xl" icon={linkedinIcon} />
+					</a>
+					<a href="https://github.com/newtonyan" target="_blank" rel="nofollow noreferrer">
+						<Icon class="text-4xl" icon={githubIcon} />
+					</a>
+				</div>
 			</div>
 		</aside>
 		<main
-			class="prose max-w-5xl grow prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:via-indigo-500 prose-h1:to-primary prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent"
+			class="prose max-w-3xl flex-1 prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:via-indigo-500 prose-h1:to-primary prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent"
 		>
 			<slot />
 		</main>

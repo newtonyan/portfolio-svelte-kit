@@ -1,4 +1,4 @@
-# Getting Started
+# Introduction
 
 To get you started, this article will provide an overview of my education, work experience, volunteer experience and skills. This information will help you get to know me better and give you an idea of my background.
 
