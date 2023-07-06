@@ -48,11 +48,11 @@
 			</div>
 		</aside>
 		<main class="mx-auto min-w-0 max-w-4xl flex-auto">
-			<div
+			<article
 				class="prose max-w-none prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:via-indigo-500 prose-h1:to-primary prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent"
 			>
 				<slot />
-			</div>
+			</article>
 		</main>
 		<aside class="hidden whitespace-nowrap xl:relative xl:block"><TableOfContent /></aside>
 	</div>
