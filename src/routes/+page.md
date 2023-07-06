@@ -25,6 +25,8 @@ education = {
 }
 ```
 
+## Skills
+
 ## Work Experience
 
 Belun Technology Company Limited (Sep 2021 - Apr 2023)
@@ -75,5 +77,3 @@ workExperience.push({
 ```
 
 ## Volunteer Experience
-
-## Skills
