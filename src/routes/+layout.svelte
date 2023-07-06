@@ -29,8 +29,8 @@
 
 <div class="min-h-screen bg-stone-100">
 	<Header />
-	<div class="mx-auto flex max-w-7xl justify-center gap-16 px-4 py-12 lg:justify-between">
-		<aside class="hidden lg:block">
+	<div class="relative mx-auto flex max-w-7xl justify-center gap-12 px-8 py-12">
+		<aside class="hidden lg:relative lg:block lg:flex-none">
 			<div class="sticky top-[6.5rem] h-0">
 				<Nav {menuGroups} />
 				<div class="mt-8 flex gap-2 text-primary">
@@ -47,11 +47,13 @@
 				</div>
 			</div>
 		</aside>
-		<main
-			class="prose mx-auto flex-1 prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:via-indigo-500 prose-h1:to-primary prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent"
-		>
-			<slot />
+		<main class="mx-auto min-w-0 max-w-4xl flex-auto">
+			<div
+				class="prose max-w-none prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:via-indigo-500 prose-h1:to-primary prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent"
+			>
+				<slot />
+			</div>
 		</main>
-		<aside class="hidden whitespace-nowrap lg:block"><TableOfContent /></aside>
+		<aside class="hidden whitespace-nowrap xl:relative xl:block"><TableOfContent /></aside>
 	</div>
 </div>
