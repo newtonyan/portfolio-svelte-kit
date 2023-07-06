@@ -11,15 +11,3 @@
 
 <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<Card>
-	<CardHeader>
-		<CardTitle>Card Title</CardTitle>
-		<CardDescription>Card Description</CardDescription>
-	</CardHeader>
-	<CardContent>
-		<p>Card Content</p>
-	</CardContent>
-	<CardFooter>
-		<p>Card Footer</p>
-	</CardFooter>
-</Card>
