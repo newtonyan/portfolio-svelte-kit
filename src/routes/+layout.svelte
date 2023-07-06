@@ -33,7 +33,7 @@
 		<aside class="hidden lg:block">
 			<div class="sticky top-[6.5rem] h-0">
 				<Nav {menuGroups} />
-				<div class="mt-8 flex gap-2">
+				<div class="mt-8 flex gap-2 text-primary">
 					<a
 						href="https://www.linkedin.com/in/newton-yan-7a6722199/"
 						target="_blank"
@@ -48,7 +48,7 @@
 			</div>
 		</aside>
 		<main
-			class="prose flex-1 prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:via-indigo-500 prose-h1:to-primary prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent"
+			class="prose mx-auto flex-1 prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:via-indigo-500 prose-h1:to-primary prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent"
 		>
 			<slot />
 		</main>
