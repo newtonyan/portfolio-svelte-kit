@@ -1,10 +1,22 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import { mdsvex } from 'mdsvex';
+import { mdsvex, escapeSvelte } from 'mdsvex';
+import shiki from 'shiki';
+
+async function highlighter(code, lang) {
+	const highlighter = await shiki.getHighlighter({ theme: 'rose-pine-moon' });
+	const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
+	return `{@html \`${html}\` }`;
+}
+
 /** @type {import('mdsvex').MdsvexOptions}*/
 const mdsvexOptions = {
-	extensions: ['.md']
+	extensions: ['.md'],
+	highlight: {
+		highlighter
+	}
 };
+
 /** @type {import('@sveltejs/kit').Config}*/
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
