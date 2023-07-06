@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 	import Header from '$components/Header.svelte';
 	import Nav from '$components/Nav.svelte';
@@ -6,13 +6,15 @@
 	import Icon from '@iconify/svelte';
 	import linkedinIcon from '@iconify/icons-mdi/linkedin';
 	import githubIcon from '@iconify/icons-mdi/github';
+	import type { MenuGroup } from '$lib/typings';
+
+	export let data;
 
 	const menuGroups = [
 		{
 			title: 'Getting Started',
-			slug: 'getting-started',
 			children: [
-				{ title: 'Introduction', slug: 'introduction' },
+				{ title: 'Introduction', slug: '' },
 				{ title: 'Work experience', slug: 'work-experience' },
 				{ title: 'Volunteering', slug: 'volunteering' }
 			]
@@ -20,13 +22,9 @@
 		{
 			title: 'Projects',
 			slug: 'projects',
-			children: [
-				{ title: 'Overview', slug: 'overview' },
-				{ title: 'Project One', slug: 'project-1' },
-				{ title: 'Project Two', slug: 'project-2' }
-			]
+			children: [{ title: 'Overview', slug: 'overview' }, ...data.projectMenuItems]
 		}
-	];
+	] satisfies MenuGroup[];
 </script>
 
 <div class="min-h-screen bg-stone-100">
@@ -50,7 +48,7 @@
 			</div>
 		</aside>
 		<main
-			class="prose max-w-3xl flex-1 prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:via-indigo-500 prose-h1:to-primary prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent"
+			class="prose flex-1 prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:via-indigo-500 prose-h1:to-primary prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent"
 		>
 			<slot />
 		</main>
