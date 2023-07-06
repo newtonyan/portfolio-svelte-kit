@@ -30,7 +30,7 @@
 <div class="min-h-screen bg-stone-100">
 	<Header />
 	<div class="relative mx-auto flex max-w-7xl justify-center gap-12 px-8 py-12">
-		<aside class="hidden lg:relative lg:block lg:flex-none">
+		<aside class="hidden w-72 lg:relative lg:block lg:flex-none">
 			<div class="sticky top-[6.5rem] h-0">
 				<Nav {menuGroups} />
 				<div class="mt-8 flex gap-2 text-primary">

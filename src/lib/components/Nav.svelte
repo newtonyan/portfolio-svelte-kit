@@ -11,7 +11,7 @@
 		{#each menuGroups as group}
 			<div>
 				<h5 class="font-bold leading-10">{group.title}</h5>
-				<ul class="space-y-1 whitespace-nowrap">
+				<ul class="space-y-1">
 					{#each group.children as child}
 						<li>
 							<a
