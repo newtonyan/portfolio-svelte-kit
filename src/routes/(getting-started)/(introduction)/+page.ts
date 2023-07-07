@@ -56,20 +56,17 @@ export const load = (() => {
 		{
 			name: 'Photoshop',
 			level: 'proficient',
-			icon: photshopIcon,
-			website: 'https://ionicframework.com/'
+			icon: photshopIcon
 		},
 		{
 			name: 'Premiere Pro',
 			level: 'proficient',
-			icon: premiereIcon,
-			website: 'https://angular.io/'
+			icon: premiereIcon
 		},
 		{
 			name: 'After Effects',
 			level: 'proficient',
-			icon: afterEffectsIcon,
-			website: 'https://react.dev/'
+			icon: afterEffectsIcon
 		}
 	];
 	return { favouriteStack, intermediateStack, otherTools };
