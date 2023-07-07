@@ -3,6 +3,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+<title>Introduction | Newton Yan</title>
+</svelte:head>
+
 # Introduction
 
 To get you started, this article will provide an overview of my education, languages and skills. This information will help you get to know me better and give you an idea of my background.
