@@ -54,6 +54,8 @@
 				<slot />
 			</article>
 		</main>
-		<aside class="hidden whitespace-nowrap xl:relative xl:block"><TableOfContent /></aside>
+		<aside class="hidden w-44 flex-none xl:relative xl:block">
+			<TableOfContent class="sticky top-[6.5rem] h-0" />
+		</aside>
 	</div>
 </div>

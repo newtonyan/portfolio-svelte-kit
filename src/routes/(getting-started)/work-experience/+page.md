@@ -1,6 +1,6 @@
 # Work Experience
 
-## Belun Technology Company Limited (Sep 2021 - Apr 2023)
+#### Belun Technology Company Limited (Sep 2021 - Apr 2023)
 
 ```js
 workExperience.push({
@@ -15,7 +15,7 @@ workExperience.push({
 });
 ```
 
-## Automated Systems (H.K.) Limited (Dec 2019 - Sep 2021)
+#### Automated Systems (H.K.) Limited (Dec 2019 - Sep 2021)
 
 ```js
 workExperience.push({
@@ -38,7 +38,7 @@ workExperience.push({
 });
 ```
 
-## Information Technology Services Centre, CUHK (Jul 2018 - Jul 2019)
+#### Information Technology Services Centre, CUHK (Jul 2018 - Jul 2019)
 
 ```js
 workExperience.push({

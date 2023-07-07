@@ -12,11 +12,6 @@ async function highlighter(code, lang) {
 	return `{@html \`${html}\` }`;
 }
 
-function customizeTOC(toc) {
-	console.log(toc);
-	return toc;
-}
-
 /** @type {import('@jsdevtools/rehype-toc').Options} */
 const rehypeTocOptions = {
 	headings: ['h2']
