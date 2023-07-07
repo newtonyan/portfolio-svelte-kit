@@ -2,6 +2,9 @@ import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import shiki from 'shiki';
+import remarkToc from 'remark-toc';
+import rehypeSlug from 'rehype-slug';
+import rehypeToc from '@jsdevtools/rehype-toc';
 
 async function highlighter(code, lang) {
 	const highlighter = await shiki.getHighlighter({ theme: 'rose-pine-moon' });
@@ -9,12 +12,24 @@ async function highlighter(code, lang) {
 	return `{@html \`${html}\` }`;
 }
 
+function customizeTOC(toc) {
+	console.log(toc);
+	return toc;
+}
+
+/** @type {import('@jsdevtools/rehype-toc').Options} */
+const rehypeTocOptions = {
+	headings: ['h2']
+};
+
 /** @type {import('mdsvex').MdsvexOptions}*/
 const mdsvexOptions = {
 	extensions: ['.md'],
 	highlight: {
 		highlighter
-	}
+	},
+	rehypePlugins: [rehypeSlug],
+	remarkPlugins: []
 };
 
 /** @type {import('@sveltejs/kit').Config}*/
