@@ -1,7 +1,7 @@
 ---
 title: Raleigh Challenge - Mountain Marathon
 shortTitle: RCMM
-description:
+description: Static website development using headless CMS
 skills:
   - svelte
   - tailwindcss

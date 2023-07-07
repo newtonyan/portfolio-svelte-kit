@@ -1,29 +1,15 @@
 <script lang="ts">
-	import type { Project } from '$lib/typings';
-	import {
-		Card,
-		CardContent,
-		CardDescription,
-		CardFooter,
-		CardHeader,
-		CardTitle
-	} from '$components/ui/card';
+	import type { Project } from "$lib/typings";
 
 	export let projects: Project[];
 </script>
 
-<div class="not-prose grid grid-cols-2 gap-4">
+<div class="not-prose grid grid-cols-2 gap-8">
 	{#each projects as project}
 		<a href={`/projects/${project.slug}`}>
-			<Card>
-				<CardHeader>
-					<CardTitle>{project.title}</CardTitle>
-					<CardDescription>{project.description}</CardDescription>
-				</CardHeader>
-				<CardContent>
-					<p>Card Content</p>
-				</CardContent>
-			</Card>
+			<img src="/projects/test.png" loading="lazy" />
+			<h3 class="mt-4 text-lg font-semibold leading-8">{project.title}</h3>
+			<p>{project.description}</p>
 		</a>
 	{/each}
 </div>

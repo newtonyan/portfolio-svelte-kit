@@ -1,20 +1,16 @@
-import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/kit/vite';
-import { mdsvex, escapeSvelte } from 'mdsvex';
-import shiki from 'shiki';
-import remarkToc from 'remark-toc';
-import rehypeSlug from 'rehype-slug';
-import rehypeToc from '@jsdevtools/rehype-toc';
+import adapter from "@sveltejs/adapter-auto";
+import { vitePreprocess } from "@sveltejs/kit/vite";
+import { mdsvex, escapeSvelte } from "mdsvex";
+import shiki from "shiki";
+import rehypeSlug from "rehype-slug";
 
 async function highlighter(code, lang) {
-	const highlighter = await shiki.getHighlighter({ theme: 'rose-pine-moon' });
+	const highlighter = await shiki.getHighlighter({ theme: "rose-pine-moon" });
 	const tokens = highlighter.codeToThemedTokens(code, lang);
 
-	// This will return an HTML string that represents the provided code.
 	const html = escapeSvelte(
 		shiki.renderToHtml(tokens, {
-			// bg: highlighter.getBackgroundColor('rose-pine-moon')
-			bg: 'hsl(var(--code))'
+			bg: "hsl(var(--code))"
 		})
 	);
 	return `{@html \`${html}\` }`;
@@ -22,12 +18,12 @@ async function highlighter(code, lang) {
 
 /** @type {import('@jsdevtools/rehype-toc').Options} */
 const rehypeTocOptions = {
-	headings: ['h2']
+	headings: ["h2"]
 };
 
 /** @type {import('mdsvex').MdsvexOptions}*/
 const mdsvexOptions = {
-	extensions: ['.md'],
+	extensions: [".md"],
 	highlight: {
 		highlighter
 	},
@@ -46,13 +42,13 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter(),
 		alias: {
-			$components: 'src/lib/components',
-			'$components/*': 'src/lib/components/*'
+			$components: "src/lib/components",
+			"$components/*": "src/lib/components/*"
 		}
 	},
-	extensions: ['.svelte', '.md'],
+	extensions: [".svelte", ".md"],
 	shadcn: {
-		componentPath: './src/lib/components/ui'
+		componentPath: "./src/lib/components/ui"
 	}
 };
 export default config;
