@@ -54,7 +54,20 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Lexend', ...defaultTheme.fontFamily.sans]
-			}
+			},
+			typography: ({ theme }) => ({
+				DEFAULT: {
+					css: {
+						'code:not(pre *)': {
+							backgroundColor: 'hsl(var(--code))',
+							color: 'hsl(var(--primary-foreground))',
+							padding: `0 ${theme('spacing.1')}`,
+							margin: `0 ${theme('spacing.1')}`,
+							borderRadius: theme('borderRadius.DEFAULT')
+						}
+					}
+				}
+			})
 		}
 	},
 	plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')]

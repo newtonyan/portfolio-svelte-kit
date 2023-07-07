@@ -8,7 +8,15 @@ import rehypeToc from '@jsdevtools/rehype-toc';
 
 async function highlighter(code, lang) {
 	const highlighter = await shiki.getHighlighter({ theme: 'rose-pine-moon' });
-	const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
+	const tokens = highlighter.codeToThemedTokens(code, lang);
+
+	// This will return an HTML string that represents the provided code.
+	const html = escapeSvelte(
+		shiki.renderToHtml(tokens, {
+			// bg: highlighter.getBackgroundColor('rose-pine-moon')
+			bg: 'hsl(var(--code))'
+		})
+	);
 	return `{@html \`${html}\` }`;
 }
 
