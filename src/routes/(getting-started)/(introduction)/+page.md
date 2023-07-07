@@ -4,6 +4,7 @@
 </script>
 
 <svelte:head>
+
 <title>Introduction | Newton Yan</title>
 </svelte:head>
 
@@ -22,7 +23,7 @@ challenges.
 
 The Chinese University of Hong Kong (2015-2019)
 
-```js {1-3}
+```js
 education = {
 	program: "B.Eng. in Systems Engineering and Engineering Management",
 	honors: "Second Class Upper Division",
