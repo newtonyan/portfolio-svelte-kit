@@ -16,5 +16,5 @@ export const load: LayoutServerLoad = async ({ fetch, route }) => {
 			slug: project.slug
 		};
 	});
-	return { projectMenuItems };
+	return { projectMenuItems, projects };
 };
