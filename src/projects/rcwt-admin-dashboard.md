@@ -7,6 +7,9 @@ skills:
   - tailwindcss
 published: true
 category: Web app
+tags:
+  - Full Stack
+  - REST API
 ---
 
 ## Mardown

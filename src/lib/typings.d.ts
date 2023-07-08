@@ -1,21 +1,21 @@
 export type Skill =
-	| 'svelte'
-	| 'tailwindcss'
-	| 'nextjs'
-	| 'html'
-	| 'css'
-	| 'javascript'
-	| 'typescript'
-	| 'angular'
-	| 'react'
-	| 'java'
-	| 'cs'
-	| 'mongodb'
-	| 'expressjs'
-	| 'mysql'
-	| 'aws'
-	| 'git';
-export type Category = 'Website' | 'Web app';
+	| "svelte"
+	| "tailwindcss"
+	| "nextjs"
+	| "html"
+	| "css"
+	| "javascript"
+	| "typescript"
+	| "angular"
+	| "react"
+	| "java"
+	| "cs"
+	| "mongodb"
+	| "expressjs"
+	| "mysql"
+	| "aws"
+	| "git";
+export type Category = "Website" | "Web app";
 
 export type Project = {
 	title: string;
@@ -23,6 +23,7 @@ export type Project = {
 	slug: string;
 	description: string;
 	skills: Skill[];
+	tags: string[];
 	published: boolean;
 	category: Category;
 };
@@ -40,7 +41,7 @@ export interface MenuGroup {
 
 export interface Stack {
 	name: string;
-	level: 'intermediate' | 'proficient';
+	level: "intermediate" | "proficient";
 	icon: IconifyIcon;
 	website?: string;
 }
