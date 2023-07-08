@@ -24,7 +24,7 @@ import afterEffectsIcon from "@iconify/icons-skill-icons/aftereffects";
 export const load = (() => {
 	const favouriteStack: Stack[] = [
 		{
-			name: "typescript",
+			name: "TypeScript",
 			level: "proficient",
 			icon: typescriptIcon,
 			website: "https://www.typescriptlang.org/"

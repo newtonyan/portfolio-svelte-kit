@@ -15,7 +15,7 @@
 		>
 			<div class="flex flex-1 flex-col items-center">
 				<Icon class="text-5xl" icon={skill.icon} />
-				<span class="mt-3 text-center text-sm font-semibold">{skill.name}</span>
+				<span class="mt-3 text-center font-mono text-sm font-semibold">{skill.name}</span>
 			</div>
 		</a>
 	{/each}
