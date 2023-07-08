@@ -11,7 +11,7 @@
 
 <h1>{data.meta.title}</h1>
 <div class="not-prose">
-	<ul>
+	<ul class="font-medium text-muted-foreground">
 		{#if data.meta.url}
 			<li class="flex items-center gap-2">
 				<ExternalLink size={16} /><a href={data.meta.url} target="_blank" rel="nofollow noreferrer"
