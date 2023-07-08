@@ -4,9 +4,10 @@
 	import Nav from "$components/Nav.svelte";
 	import TableOfContent from "$components/TableOfContent.svelte";
 	import Icon from "@iconify/svelte";
-	import linkedinIcon from "@iconify/icons-mdi/linkedin";
-	import githubIcon from "@iconify/icons-mdi/github";
+
 	import type { MenuGroup } from "$lib/types";
+	import { Menu } from "lucide-svelte";
+	import SocialMedia from "$components/SocialMedia.svelte";
 
 	export let data;
 
@@ -33,18 +34,7 @@
 		<aside class="hidden w-72 lg:relative lg:block lg:flex-none">
 			<div class="sticky top-[6.5rem] h-0">
 				<Nav {menuGroups} />
-				<div class="mt-8 flex gap-2 text-primary">
-					<a
-						href="https://www.linkedin.com/in/newton-yan-7a6722199/"
-						target="_blank"
-						rel="nofollow noreferrer"
-					>
-						<Icon class="text-4xl" icon={linkedinIcon} />
-					</a>
-					<a href="https://github.com/newtonyan" target="_blank" rel="nofollow noreferrer">
-						<Icon class="text-4xl" icon={githubIcon} />
-					</a>
-				</div>
+				<SocialMedia class="mt-8 flex gap-2 text-primary" />
 			</div>
 		</aside>
 		<main class="relative mx-auto min-w-0 max-w-4xl flex-auto">

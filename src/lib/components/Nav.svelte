@@ -2,7 +2,9 @@
 	import { page } from "$app/stores";
 	import type { MenuGroup, MenuItem } from "$lib/types";
 	import clsx from "clsx";
+	import { SheetClose } from "./ui/sheet";
 
+	export let dialogOpen: boolean | undefined = undefined;
 	export let menuGroups: MenuGroup[];
 </script>
 
@@ -14,7 +16,14 @@
 				<ul class="space-y-1">
 					{#each group.children as child}
 						<li>
+							<!-- TODO Workaround: add tabindex=0 to make the anchor focusable with keyboard -->
 							<a
+								tabindex="0"
+								on:click={() => {
+									if (dialogOpen !== undefined) {
+										dialogOpen = false;
+									}
+								}}
 								href={`${group.slug ? `/${group.slug}` : ""}/${child.slug}`}
 								class={clsx(
 									$page.url.pathname === `${group.slug ? `/${group.slug}` : ""}/${child.slug}` &&
