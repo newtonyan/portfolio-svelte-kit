@@ -1,3 +1,5 @@
+import type { IconifyIcon } from "@iconify/svelte";
+
 export type Skill =
 	| "svelte"
 	| "tailwindcss"
@@ -28,20 +30,20 @@ export type Project = {
 	category: Category;
 };
 
-export interface MenuItem {
+export type MenuItem = {
 	title: string;
 	slug: string;
-}
+};
 
-export interface MenuGroup {
+export type MenuGroup = {
 	title: string;
 	slug?: string;
 	children: MenuItem[];
-}
+};
 
-export interface Stack {
+export type Stack = {
 	name: string;
 	level: "intermediate" | "proficient";
 	icon: IconifyIcon;
 	website?: string;
-}
+};
