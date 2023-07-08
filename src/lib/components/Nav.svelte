@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import type { MenuGroup, MenuItem } from '$lib/typings';
-	import clsx from 'clsx';
+	import { page } from "$app/stores";
+	import type { MenuGroup, MenuItem } from "$lib/types";
+	import clsx from "clsx";
 
 	export let menuGroups: MenuGroup[];
 </script>
@@ -15,9 +15,9 @@
 					{#each group.children as child}
 						<li>
 							<a
-								href={`${group.slug ? `/${group.slug}` : ''}/${child.slug}`}
+								href={`${group.slug ? `/${group.slug}` : ""}/${child.slug}`}
 								class={clsx(
-									$page.url.pathname === `${group.slug ? `/${group.slug}` : ''}/${child.slug}` &&
+									$page.url.pathname === `${group.slug ? `/${group.slug}` : ""}/${child.slug}` &&
 										"bg-gradient-to-r from-primary to-indigo-500 bg-clip-text font-bold text-transparent before:mr-1 before:content-['<'] after:ml-1 after:content-['/>']"
 								)}>{child.title}</a
 							>

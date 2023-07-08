@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Project } from "$lib/typings";
+	import type { Project } from "$lib/types";
 	import Badge from "./ui/badge/Badge.svelte";
 
 	export let projects: Project[];

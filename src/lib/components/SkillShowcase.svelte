@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { Stack } from '$lib/typings';
-	import Icon from '@iconify/svelte';
+	import type { Stack } from "$lib/types";
+	import Icon from "@iconify/svelte";
 
 	export let list: Stack[];
 </script>

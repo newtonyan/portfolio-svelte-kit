@@ -1,28 +1,28 @@
 <script lang="ts">
-	import '../app.css';
-	import Header from '$components/Header.svelte';
-	import Nav from '$components/Nav.svelte';
-	import TableOfContent from '$components/TableOfContent.svelte';
-	import Icon from '@iconify/svelte';
-	import linkedinIcon from '@iconify/icons-mdi/linkedin';
-	import githubIcon from '@iconify/icons-mdi/github';
-	import type { MenuGroup } from '$lib/typings';
+	import "../app.css";
+	import Header from "$components/Header.svelte";
+	import Nav from "$components/Nav.svelte";
+	import TableOfContent from "$components/TableOfContent.svelte";
+	import Icon from "@iconify/svelte";
+	import linkedinIcon from "@iconify/icons-mdi/linkedin";
+	import githubIcon from "@iconify/icons-mdi/github";
+	import type { MenuGroup } from "$lib/types";
 
 	export let data;
 
 	const menuGroups = [
 		{
-			title: 'Getting Started',
+			title: "Getting Started",
 			children: [
-				{ title: 'Introduction', slug: '' },
-				{ title: 'Work experience', slug: 'work-experience' },
-				{ title: 'Volunteering', slug: 'volunteering' }
+				{ title: "Introduction", slug: "" },
+				{ title: "Work experience", slug: "work-experience" },
+				{ title: "Volunteering", slug: "volunteering" }
 			]
 		},
 		{
-			title: 'Projects',
-			slug: 'projects',
-			children: [{ title: 'Overview', slug: 'overview' }, ...data.projectMenuItems]
+			title: "Projects",
+			slug: "projects",
+			children: [{ title: "Overview", slug: "overview" }, ...data.projectMenuItems]
 		}
 	] satisfies MenuGroup[];
 </script>
