@@ -14,6 +14,7 @@ import mongoIcon from "@iconify/icons-skill-icons/mongodb";
 import expressIcon from "@iconify/icons-skill-icons/expressjs-dark";
 import prismaIcon from "@iconify/icons-skill-icons/prisma";
 import javaIcon from "@iconify/icons-skill-icons/java-dark";
+import unityIcon from "@iconify/icons-skill-icons/unity-dark";
 import sanityIcon from "@iconify/icons-devicon/sanity";
 import ionicIcon from "@iconify/icons-logos/ionic-icon";
 import photshopIcon from "@iconify/icons-skill-icons/photoshop";
@@ -44,13 +45,24 @@ export const load = (() => {
 		{ name: "Prisma", level: "proficient", icon: prismaIcon, website: "https://www.prisma.io/" }
 	];
 	const intermediateStack: Stack[] = [
-		{ name: "Ionic", level: "proficient", icon: ionicIcon, website: "https://ionicframework.com/" },
-		{ name: "Angular", level: "proficient", icon: angularIcon, website: "https://angular.io/" },
-		{ name: "React", level: "proficient", icon: reactIcon, website: "https://react.dev/" },
-		{ name: "Next.js", level: "proficient", icon: nextIcon, website: "https://nextjs.org/" },
-		{ name: "Express", level: "proficient", icon: expressIcon, website: "https://expressjs.com/" },
-		{ name: "Sanity", level: "proficient", icon: sanityIcon, website: "https://www.sanity.io/" },
-		{ name: "Java", level: "proficient", icon: javaIcon, website: "https://www.java.com/en/" }
+		{
+			name: "Ionic",
+			level: "intermediate",
+			icon: ionicIcon,
+			website: "https://ionicframework.com/"
+		},
+		{ name: "Angular", level: "intermediate", icon: angularIcon, website: "https://angular.io/" },
+		{ name: "React", level: "intermediate", icon: reactIcon, website: "https://react.dev/" },
+		{ name: "Next.js", level: "intermediate", icon: nextIcon, website: "https://nextjs.org/" },
+		{
+			name: "Express",
+			level: "intermediate",
+			icon: expressIcon,
+			website: "https://expressjs.com/"
+		},
+		{ name: "Sanity", level: "intermediate", icon: sanityIcon, website: "https://www.sanity.io/" },
+		{ name: "Java", level: "intermediate", icon: javaIcon, website: "https://www.java.com/en/" },
+		{ name: "Unity", level: "intermediate", icon: unityIcon, website: "https://unity.com/" }
 	];
 	const otherTools: Stack[] = [
 		{
