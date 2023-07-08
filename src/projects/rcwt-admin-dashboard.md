@@ -10,6 +10,7 @@ category: Web app
 tags:
   - Full Stack
   - REST API
+thumbnail: test.png
 ---
 
 ## Mardown
