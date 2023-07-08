@@ -14,8 +14,15 @@
 						<img
 							src={`/projects/${project.slug}/${project.thumbnail}`}
 							loading="lazy"
-							class="object-cover"
+							class="h-full w-full object-cover"
 							alt={`Thumbnail for ${project.title}`}
+						/>
+					{:else}
+						<img
+							src={`/logo-icon-only.svg`}
+							loading="lazy"
+							class="h-full w-full object-cover"
+							alt={`Placeholder for thumbnail`}
 						/>
 					{/if}
 				</AspectRatio>
