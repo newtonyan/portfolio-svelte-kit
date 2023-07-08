@@ -30,6 +30,7 @@ export type Project = {
 	category: Category;
 	url?: string;
 	thumbnail?: string;
+	date: string;
 };
 
 export type MenuItem = {
