@@ -28,6 +28,8 @@ export type Project = {
 	tags: string[];
 	published: boolean;
 	category: Category;
+	url?: string;
+	thumbnail?: string;
 };
 
 export type MenuItem = {

@@ -1,13 +1,13 @@
-import { error } from '@sveltejs/kit';
+import type { Project } from "$lib/types";
+import { error } from "@sveltejs/kit";
 
 export async function load({ params }) {
 	try {
 		const project = await import(`../../../projects/${params.slug}.md`);
-		console.log(project);
 
 		return {
 			content: project.default,
-			meta: project.metadata
+			meta: project.metadata as Project
 		};
 	} catch (e) {
 		throw error(404, `Could not find ${params.slug}`);
