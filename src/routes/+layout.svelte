@@ -49,7 +49,7 @@
 		</aside>
 		<main class="relative mx-auto min-w-0 max-w-4xl flex-auto">
 			<article
-				class="prose max-w-none prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:via-indigo-500 prose-h1:to-primary prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent prose-code:before:content-[''] prose-code:after:content-['']"
+				class="prose max-w-none prose-h1:inline-block prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:from-65% prose-h1:to-purple-800 prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent prose-code:before:content-[''] prose-code:after:content-['']"
 			>
 				<slot />
 			</article>
