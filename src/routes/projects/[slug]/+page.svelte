@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Calendar, ExternalLink, Hash } from "lucide-svelte";
+	import { Calendar, ExternalLink, Github, Hash } from "lucide-svelte";
 	export let data;
 </script>
 
@@ -17,6 +17,13 @@
 			<li class="flex items-center gap-2">
 				<ExternalLink size={16} /><a href={data.meta.url} target="_blank" rel="nofollow noreferrer"
 					>{data.meta.url}</a
+				>
+			</li>
+		{/if}
+		{#if data.meta.githubRepo}
+			<li class="flex items-center gap-2">
+				<Github size={16} /><a href={data.meta.githubRepo} target="_blank" rel="nofollow noreferrer"
+					>GitHub repository</a
 				>
 			</li>
 		{/if}
