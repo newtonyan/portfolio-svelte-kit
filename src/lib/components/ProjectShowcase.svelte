@@ -17,7 +17,7 @@
 					{project.tags.join(", ")}
 				</span>
 			{/if}
-			<p class="mt-4">{project.description}</p>
+			<p class="mt-4 line-clamp-3">{project.description}</p>
 		</div>
 	{/each}
 </div>
