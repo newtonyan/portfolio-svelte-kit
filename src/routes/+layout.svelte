@@ -3,11 +3,12 @@
 	import Header from "$components/Header.svelte";
 	import Nav from "$components/Nav.svelte";
 	import TableOfContent from "$components/TableOfContent.svelte";
-	import Icon from "@iconify/svelte";
 
 	import type { MenuGroup } from "$lib/types";
 	import { Menu } from "lucide-svelte";
 	import SocialMedia from "$components/SocialMedia.svelte";
+	import "@fontsource-variable/lexend";
+	import "@fontsource-variable/fira-code";
 
 	export let data;
 
@@ -39,7 +40,7 @@
 		</aside>
 		<main class="relative mx-auto min-w-0 max-w-4xl flex-auto">
 			<article
-				class="prose max-w-none prose-h1:inline-block prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:from-65% prose-h1:to-purple-800 prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:text-transparent prose-code:before:content-[''] prose-code:after:content-['']"
+				class="prose max-w-none prose-h1:inline-block prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:from-65% prose-h1:to-purple-800 prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:font-bold prose-h1:text-transparent prose-code:before:content-[''] prose-code:after:content-['']"
 			>
 				<slot />
 			</article>

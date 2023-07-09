@@ -56,7 +56,8 @@ export default {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				sans: ["Lexend", ...defaultTheme.fontFamily.sans]
+				sans: ["Lexend Variable", ...defaultTheme.fontFamily.sans],
+				mono: ["Fira Code Variable", ...defaultTheme.fontFamily.mono]
 			},
 			typography: ({ theme }) => ({
 				DEFAULT: {
