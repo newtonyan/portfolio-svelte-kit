@@ -5,8 +5,13 @@
 </script>
 
 <div {...$$props}>
-	<div class="flex gap-2 text-foreground">
-		<a href="https://github.com/newtonyan" target="_blank" rel="nofollow noreferrer">
+	<div class="flex gap-2 text-foreground/70">
+		<a
+			href="https://github.com/newtonyan"
+			target="_blank"
+			rel="nofollow noreferrer"
+			class="hover:text-primary"
+		>
 			<Icon
 				class="text-4xl transition duration-200 ease-in-out hover:scale-105"
 				icon={githubIcon}
@@ -16,6 +21,7 @@
 			href="https://www.linkedin.com/in/newton-yan-7a6722199/"
 			target="_blank"
 			rel="nofollow noreferrer"
+			class="hover:text-primary"
 		>
 			<Icon
 				class="text-4xl transition duration-200 ease-in-out hover:scale-105"
