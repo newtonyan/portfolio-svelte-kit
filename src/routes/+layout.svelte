@@ -8,6 +8,7 @@
 	import SocialMedia from "$components/SocialMedia.svelte";
 	import "@fontsource-variable/lexend";
 	import "@fontsource-variable/fira-code";
+	import { fly } from "svelte/transition";
 
 	export let data;
 
@@ -38,11 +39,15 @@
 			</div>
 		</aside>
 		<main class="relative mx-auto min-w-0 max-w-4xl flex-auto">
-			<article
-				class="prose max-w-none prose-h1:inline-block prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:from-65% prose-h1:to-purple-800 prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:font-bold prose-h1:text-transparent prose-code:before:content-[''] prose-code:after:content-['']"
-			>
-				<slot />
-			</article>
+			{#key data.url}
+				<article
+					in:fly={{ y: -5, duration: 500, delay: 500 }}
+					out:fly={{ y: 5, duration: 500 }}
+					class="prose max-w-none prose-h1:inline-block prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:from-65% prose-h1:to-purple-800 prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:font-bold prose-h1:text-transparent prose-code:before:content-[''] prose-code:after:content-['']"
+				>
+					<slot />
+				</article>
+			{/key}
 		</main>
 		<!-- <aside class="hidden w-44 flex-none xl:relative xl:block">
 			<TableOfContent class="sticky top-[6.5rem] h-0" />

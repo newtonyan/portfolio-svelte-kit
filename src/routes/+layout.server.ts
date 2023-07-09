@@ -1,10 +1,9 @@
 import type { MenuItem, Project } from "$lib/types";
-import { redirect } from "@sveltejs/kit";
 import type { LayoutServerLoad } from "./$types";
 
 export const prerender = true;
 
-export const load: LayoutServerLoad = async ({ fetch, route }) => {
+export const load: LayoutServerLoad = async ({ fetch, route, url }) => {
 	const response = await fetch("/api/projects");
 	const projects: Project[] = await response.json();
 	const projectMenuItems: MenuItem[] = projects.map((project) => {
@@ -13,5 +12,5 @@ export const load: LayoutServerLoad = async ({ fetch, route }) => {
 			slug: project.slug
 		};
 	});
-	return { projectMenuItems, projects };
+	return { projectMenuItems, projects, url: url.pathname };
 };
