@@ -5,7 +5,6 @@
 	import TableOfContent from "$components/TableOfContent.svelte";
 
 	import type { MenuGroup } from "$lib/types";
-	import { Menu } from "lucide-svelte";
 	import SocialMedia from "$components/SocialMedia.svelte";
 	import "@fontsource-variable/lexend";
 	import "@fontsource-variable/fira-code";

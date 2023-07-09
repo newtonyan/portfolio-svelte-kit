@@ -9,17 +9,13 @@
 
 	let className: string | undefined | null = undefined;
 	export { className as class };
-	export let position: VariantProps<typeof sheetVariants>["position"] =
-		"right";
+	export let position: VariantProps<typeof sheetVariants>["position"] = "right";
 	export let size: VariantProps<typeof sheetVariants>["size"] = "default";
 </script>
 
 <SheetPortal {position}>
 	<SheetOverlay />
-	<SheetPrimitive.Content
-		class={cn(sheetVariants({ position, size }), className)}
-		{...$$restProps}
-	>
+	<SheetPrimitive.Content class={cn(sheetVariants({ position, size }), className)} {...$$restProps}>
 		<slot />
 		<SheetPrimitive.Close
 			class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary"

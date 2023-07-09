@@ -18,10 +18,10 @@ export const sheetVariants = cva(
 	{
 		variants: {
 			position: {
-				top: "animate-in slide-in-from-top w-full duration-300",
-				bottom: "animate-in slide-in-from-bottom w-full duration-300",
-				left: "animate-in slide-in-from-left h-full duration-300",
-				right: "animate-in slide-in-from-right h-full duration-300"
+				top: "w-full",
+				bottom: "w-full",
+				left: "h-full",
+				right: "h-full"
 			},
 			size: {
 				content: "",
