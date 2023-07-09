@@ -17,32 +17,35 @@
 					{#each group.children as child}
 						{@const slug = `${group.slug ? `/${group.slug}` : ""}/${child.slug}`}
 						{@const active = $page.url.pathname === slug}
-						<!-- TODO Workaround: add tabindex=0 to make the anchor focusable with keyboard -->
-						<!-- svelte-ignore a11y-no-static-element-interactions -->
-						<svelte:element
-							this={active ? "span" : "a"}
-							on:click={() => {
-								if (active) return;
-								if (dialogOpen !== undefined) {
-									dialogOpen = false;
-								}
-							}}
-							href={slug}
-							class="group focus-visible:outline-none"
-						>
-							<li
-								class={clsx(!active && "group-hover:bg-stone-200 group-focus-visible:bg-stone-200")}
+						<li>
+							<!-- svelte-ignore a11y-no-static-element-interactions -->
+							<svelte:element
+								this={active ? "span" : "a"}
+								on:click={() => {
+									if (active) return;
+									if (dialogOpen !== undefined) {
+										dialogOpen = false;
+									}
+								}}
+								href={slug}
+								class="group focus-visible:outline-none"
 							>
-								<span
+								<div
 									class={clsx(
-										active &&
-											"bg-gradient-to-r from-primary to-indigo-500 bg-clip-text font-bold text-transparent before:mr-1 before:content-['<'] after:ml-1 after:content-['/>']",
-										!active &&
-											"group-hover:animate-cursor-blink group-hover:border-r-2 group-hover:pr-[1px] group-focus-visible:animate-cursor-blink group-focus-visible:border-r-2 group-focus-visible:pr-[1px]"
-									)}>{child.title}</span
+										!active && "group-hover:bg-stone-200 group-focus-visible:bg-stone-200"
+									)}
 								>
-							</li>
-						</svelte:element>
+									<span
+										class={clsx(
+											active &&
+												"bg-gradient-to-r from-primary to-indigo-500 bg-clip-text font-bold text-transparent before:mr-1 before:content-['<'] after:ml-1 after:content-['/>']",
+											!active &&
+												"group-hover:animate-cursor-blink group-hover:border-r-2 group-hover:pr-[1px] group-focus-visible:animate-cursor-blink group-focus-visible:border-r-2 group-focus-visible:pr-[1px]"
+										)}>{child.title}</span
+									>
+								</div>
+							</svelte:element>
+						</li>
 					{/each}
 				</ul>
 			</div>
