@@ -37,7 +37,6 @@
 			<div class="sticky top-[7.6rem]">
 				<Nav {menuGroups} />
 				<SocialMedia class="mt-8" />
-				<ThemeToggle />
 			</div>
 		</aside>
 		<main class="relative mx-auto min-w-0 max-w-4xl flex-auto">
