@@ -5,7 +5,7 @@
 	export let projects: Project[];
 </script>
 
-<div class="not-prose grid grid-cols-1 gap-20 text-foreground lg:grid-cols-2 lg:gap-8">
+<div class="not-prose grid grid-cols-1 gap-20 text-foreground md:grid-cols-2 lg:gap-8">
 	{#each projects as project}
 		<div>
 			<a href={`/projects/${project.slug}`} class="group">
@@ -26,7 +26,7 @@
 						/>
 					{/if}
 				</AspectRatio>
-				<h3 class="mt-4 text-lg font-semibold leading-4 group-hover:text-primary">
+				<h3 class="mt-4 text-lg font-semibold leading-6 group-hover:text-primary">
 					{project.title}
 				</h3>
 			</a>
