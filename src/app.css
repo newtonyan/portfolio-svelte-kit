@@ -4,49 +4,53 @@
 @layer base {
 	:root {
 		--background: 300 5% 96%;
-		--foreground: 222.2 47.4% 11.2%;
-		--muted: 210 40% 96.1%;
-		--muted-foreground: 215.4 16.3% 46.9%;
-		--popover: 0 0% 100%;
-		--popover-foreground: 222.2 47.4% 11.2%;
+		--foreground: 287 20% 10%;
+		--muted: 287 15% 93%;
+		--muted-foreground: 287 3% 45%;
+		--popover: 287 46% 30%;
+		--popover-foreground: 287 40% 15%;
 		--border: 214.3 31.8% 91.4%;
 		--input: 214.3 31.8% 91.4%;
-		--card: 0 0% 100%;
-		--card-foreground: 222.2 47.4% 11.2%;
+		--card: 287 20% 93%;
+		--card-foreground: 287 40% 15%;
 		--primary: 287 46% 30%;
 		--primary-foreground: 210 40% 98%;
-		--secondary: 210 40% 96.1%;
-		--secondary-foreground: 222.2 47.4% 11.2%;
-		--accent: 210 40% 96.1%;
-		--accent-foreground: 222.2 47.4% 11.2%;
+		--secondary: 35 88% 72%;
+		--secondary-foreground: 287 20% 10%;
+		--accent: 287 15% 93%;
+		--accent-foreground: 287 20% 10%;
 		--destructive: 0 92% 38%;
 		--destructive-foreground: 210 40% 98%;
 		--ring: 215 20.2% 65.1%;
 		--radius: 0.5rem;
 		--code: 287 25% 20%;
+		--code-foreground: 35 88% 72%;
+		--body: 287 10% 20%;
 	}
 	.dark {
-		--background: 224 71% 4%;
-		--foreground: 213 31% 91%;
+		--background: 0 0% 8%;
+		--foreground: 287 7% 100%;
 		--muted: 223 47% 11%;
-		--muted-foreground: 215.4 16.3% 56.9%;
-		--accent: 216 34% 17%;
+		--muted-foreground: 287 2% 50%;
+		--accent: 287 6% 13%;
 		--accent-foreground: 210 40% 98%;
 		--popover: 224 71% 4%;
 		--popover-foreground: 215 20.2% 65.1%;
-		--border: 216 34% 17%;
-		--input: 216 34% 17%;
-		--card: 224 71% 4%;
-		--card-foreground: 213 31% 91%;
-		--primary: 210 40% 98%;
-		--primary-foreground: 222.2 47.4% 1.2%;
-		--secondary: 222.2 47.4% 11.2%;
+		--border: 287 6% 13%;
+		--input: 287 6% 13%;
+		--card: 287 10% 12%;
+		--card-foreground: 287 7% 100%;
+		--primary: 287 46% 55%;
+		--primary-foreground: 210 40% 98%;
+		--secondary: 35 81% 56%;
 		--secondary-foreground: 210 40% 98%;
 		--destructive: 359 51% 48%;
 		--destructive-foreground: 210 40% 98%;
-		--ring: 216 34% 17%;
+		--ring: 287 6% 13%;
 		--radius: 0.5rem;
-		--code: 359 51% 48%;
+		--code: 287 10% 90%;
+		--code-foreground: 35 81% 56%;
+		--body: 287 0% 80%;
 	}
 }
 @layer base {

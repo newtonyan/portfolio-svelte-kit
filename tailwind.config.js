@@ -47,7 +47,11 @@ export default {
 					foreground: "hsl(var(--card-foreground))"
 				},
 				code: {
-					DEFAULT: "hsl(var(--code))"
+					DEFAULT: "hsl(var(--code))",
+					foreground: "hsl(var(--code-foreground))"
+				},
+				body: {
+					DEFAULT: "hsl(var(--body))"
 				}
 			},
 			borderRadius: {
@@ -64,7 +68,7 @@ export default {
 					css: {
 						"code:not(pre *)": {
 							backgroundColor: "hsl(var(--code))",
-							color: "hsl(var(--primary-foreground))",
+							color: "hsl(var(--code-foreground))",
 							padding: `0 ${theme("spacing.1")}`,
 							margin: `0 ${theme("spacing.1")}`,
 							borderRadius: theme("borderRadius.DEFAULT")

@@ -32,7 +32,8 @@
 							>
 								<div
 									class={clsx(
-										!active && "group-hover:bg-stone-200 group-focus-visible:bg-stone-200"
+										!active &&
+											"group-hover:bg-stone-200 group-focus-visible:bg-stone-200 group-hover:dark:bg-stone-800 group-focus-visible:dark:bg-stone-800"
 									)}
 								>
 									<span
