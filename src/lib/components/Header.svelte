@@ -19,13 +19,13 @@
 		class="mx-auto flex max-w-7xl items-center border-t border-foreground/10 px-8 py-2 lg:hidden"
 	>
 		<Sheet bind:open>
-			<SheetTrigger class="flex w-full gap-2 text-primary">
+			<SheetTrigger class="flex w-full items-center gap-2 text-primary">
 				<Menu /> <span class="font-bold">Menu</span>
 			</SheetTrigger>
 			<SheetContent size="full" position="left" class="bg-background">
 				<div class="p-4">
 					<Nav {menuGroups} bind:dialogOpen={open} />
-					<SocialMedia class="mt-8 flex gap-2 text-foreground" />
+					<SocialMedia class="mt-8" />
 				</div>
 			</SheetContent>
 		</Sheet>
