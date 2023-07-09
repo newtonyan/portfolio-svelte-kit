@@ -71,7 +71,16 @@ export default {
 						}
 					}
 				}
-			})
+			}),
+			keyframes: {
+				"cursor-blink": {
+					"0%, 100%": { borderColor: "hsl(var(--primary))" },
+					"50%": { borderColor: "transparent" }
+				}
+			},
+			animation: {
+				"cursor-blink": "cursor-blink 1s step-end infinite"
+			}
 		}
 	},
 	plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")]
