@@ -15,6 +15,7 @@
 				<h5 class="font-bold leading-10">{group.title}</h5>
 				<ul class="space-y-1">
 					{#each group.children as child}
+						{@const slug = `${group.slug ? `/${group.slug}` : ""}/${child.slug}`}
 						<li>
 							<!-- TODO Workaround: add tabindex=0 to make the anchor focusable with keyboard -->
 							<a
@@ -24,9 +25,9 @@
 										dialogOpen = false;
 									}
 								}}
-								href={`${group.slug ? `/${group.slug}` : ""}/${child.slug}`}
+								href={slug}
 								class={clsx(
-									$page.url.pathname === `${group.slug ? `/${group.slug}` : ""}/${child.slug}` &&
+									$page.url.pathname === slug &&
 										"bg-gradient-to-r from-primary to-indigo-500 bg-clip-text font-bold text-transparent before:mr-1 before:content-['<'] after:ml-1 after:content-['/>']"
 								)}>{child.title}</a
 							>

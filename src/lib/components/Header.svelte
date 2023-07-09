@@ -22,7 +22,7 @@
 			<SheetTrigger class="flex gap-2 text-primary">
 				<Menu /> <span class="font-bold">Menu</span>
 			</SheetTrigger>
-			<SheetContent size="content" position="left">
+			<SheetContent size="content" position="left" class="bg-stone-100">
 				<div class="p-4">
 					<Nav {menuGroups} bind:dialogOpen={open} />
 					<SocialMedia class="mt-8 flex gap-2 text-primary" />
