@@ -30,5 +30,4 @@
 			</SheetContent>
 		</Sheet>
 	</div>
-	<!-- <div class="inset absolute bg-red-500" /> -->
 </header>
