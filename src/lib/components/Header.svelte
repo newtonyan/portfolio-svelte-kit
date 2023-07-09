@@ -25,7 +25,7 @@
 			<SheetContent size="full" position="left" class="bg-background">
 				<div class="p-4">
 					<Nav {menuGroups} bind:dialogOpen={open} />
-					<SocialMedia class="mt-8 flex gap-2 text-primary" />
+					<SocialMedia class="mt-8 flex gap-2 text-foreground" />
 				</div>
 			</SheetContent>
 		</Sheet>

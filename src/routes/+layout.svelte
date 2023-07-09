@@ -35,7 +35,7 @@
 		<aside class="hidden w-72 lg:relative lg:block lg:flex-none">
 			<div class="sticky top-[6.5rem] h-0">
 				<Nav {menuGroups} />
-				<SocialMedia class="mt-8 flex gap-2 text-primary" />
+				<SocialMedia class="mt-8 flex gap-2 text-foreground" />
 			</div>
 		</aside>
 		<main class="relative mx-auto min-w-0 max-w-4xl flex-auto">

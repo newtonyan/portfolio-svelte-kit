@@ -5,6 +5,9 @@
 </script>
 
 <div {...$$props}>
+	<a href="https://github.com/newtonyan" target="_blank" rel="nofollow noreferrer">
+		<Icon class="text-4xl transition duration-200 ease-in-out hover:scale-105" icon={githubIcon} />
+	</a>
 	<a
 		href="https://www.linkedin.com/in/newton-yan-7a6722199/"
 		target="_blank"
@@ -14,8 +17,5 @@
 			class="text-4xl transition duration-200 ease-in-out hover:scale-105"
 			icon={linkedinIcon}
 		/>
-	</a>
-	<a href="https://github.com/newtonyan" target="_blank" rel="nofollow noreferrer">
-		<Icon class="text-4xl transition duration-200 ease-in-out hover:scale-105" icon={githubIcon} />
 	</a>
 </div>
