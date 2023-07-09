@@ -10,9 +10,12 @@
 		target="_blank"
 		rel="nofollow noreferrer"
 	>
-		<Icon class="text-4xl" icon={linkedinIcon} />
+		<Icon
+			class="text-4xl transition duration-200 ease-in-out hover:scale-105"
+			icon={linkedinIcon}
+		/>
 	</a>
 	<a href="https://github.com/newtonyan" target="_blank" rel="nofollow noreferrer">
-		<Icon class="text-4xl" icon={githubIcon} />
+		<Icon class="text-4xl transition duration-200 ease-in-out hover:scale-105" icon={githubIcon} />
 	</a>
 </div>
