@@ -3,7 +3,7 @@
 	import { cva } from "class-variance-authority";
 	import { Dialog as SheetPrimitive } from "radix-svelte";
 	import { cn } from "$lib/utils";
-	import { tailwindAnimate } from "$lib/custom-transition";
+	import { fade } from "svelte/transition";
 
 	const portalVariants = cva("fixed inset-0 z-50 flex", {
 		variants: {
@@ -23,17 +23,7 @@
 </script>
 
 <SheetPrimitive.Portal class={cn(className)} {...$$restProps}>
-	<div
-		class={portalVariants({ position })}
-		in:tailwindAnimate={{
-			duration: 500,
-			classList: ["animate-in", `slide-in-from-${position}`, "duration-500"]
-		}}
-		out:tailwindAnimate={{
-			duration: 500,
-			classList: ["animate-out", `slide-out-to-${position}`, "duration-500"]
-		}}
-	>
+	<div class={portalVariants({ position })} transition:fade={{ duration: 300 }}>
 		<slot />
 	</div>
 </SheetPrimitive.Portal>

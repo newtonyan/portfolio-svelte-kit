@@ -9,7 +9,7 @@ export function tailwindAnimate(
 		classList: string[];
 	}
 ) {
-	node.classList.add(...params.classList, `duration-${params.duration}`);
+	node.classList.add(...params.classList);
 
 	return {
 		delay: params.delay || 0,
