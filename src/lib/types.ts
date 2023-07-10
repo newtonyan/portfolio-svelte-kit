@@ -48,7 +48,7 @@ export type MenuGroup = {
 export type Stack = {
 	name: string;
 	level: "intermediate" | "proficient";
-	icon: { light: IconifyIcon; dark?: IconifyIcon };
+	icon: { light: IconifyIcon | string; dark?: IconifyIcon | string };
 	website?: string;
 };
 

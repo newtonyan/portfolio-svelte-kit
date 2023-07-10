@@ -3,7 +3,7 @@ import type { ColorTheme } from "./types";
 import { browser } from "$app/environment";
 
 function isValidColorTheme(theme: ColorTheme): theme is ColorTheme {
-	return true;
+	return theme === "light" || theme === "dark";
 }
 
 let initialValue: ColorTheme = "light";

@@ -124,5 +124,12 @@ export const load = (() => {
 			icon: { light: afterEffectsIcon }
 		}
 	];
-	return { favouriteStack, intermediateStack, otherTools };
+	const certificates: Stack[] = [
+		{
+			name: "Professional Scrum Master II",
+			level: "proficient",
+			icon: { light: "/psmii.png" }
+		}
+	];
+	return { favouriteStack, intermediateStack, otherTools, certificates };
 }) satisfies PageLoad;
