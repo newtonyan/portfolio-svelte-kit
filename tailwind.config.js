@@ -70,7 +70,7 @@ export default {
 							backgroundColor: "var(--shiki-color-background)",
 							color: "var(--shiki-token-string)",
 							padding: `0 ${theme("spacing.1")}`,
-							margin: `0 ${theme("spacing.1")}`,
+							margin: `0 ${theme("spacing.0.5")}`,
 							borderRadius: theme("borderRadius.DEFAULT"),
 							border: `solid ${theme("borderWidth.DEFAULT")} ${theme("colors.accent.DEFAULT")}`
 						}
