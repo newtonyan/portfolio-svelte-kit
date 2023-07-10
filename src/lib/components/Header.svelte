@@ -18,7 +18,9 @@
 	}
 </script>
 
-<header class="sticky top-0 z-10 border-b border-foreground/10 bg-background/95 backdrop-blur-sm">
+<header
+	class="sticky top-0 z-10 border-b border-foreground/10 bg-background/95 backdrop-blur-sm transition-colors duration-500"
+>
 	<a
 		on:click={(e) => {
 			blur(e); // TODO force blur as it is not blurring after the first click

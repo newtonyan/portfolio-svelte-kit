@@ -29,7 +29,7 @@
 	] satisfies MenuGroup[];
 </script>
 
-<div class="min-h-screen bg-background">
+<div class="min-h-screen bg-background transition-colors duration-500">
 	<Header {menuGroups} />
 	<div class="relative mx-auto flex max-w-7xl justify-center gap-12 px-8 py-12">
 		<aside class="hidden w-72 lg:relative lg:block lg:flex-none">
@@ -45,7 +45,7 @@
 				<article
 					in:fly={{ y: -5, duration: 500, delay: 500 }}
 					out:fly={{ y: 5, duration: 500 }}
-					class="prose max-w-none prose-headings:text-foreground prose-h1:inline-block prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:to-indigo-700 prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:font-bold prose-h1:text-transparent prose-p:text-body prose-code:before:content-[''] prose-code:after:content-['']"
+					class="prose max-w-none prose-headings:text-foreground prose-h1:inline-block prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:to-indigo-700 prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:font-bold prose-h1:text-transparent prose-p:text-body prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:transition-colors prose-pre:duration-500"
 				>
 					<slot />
 				</article>
