@@ -38,7 +38,7 @@
 				<SocialMedia class="mt-8" />
 			</div>
 		</aside>
-		<main class="relative mx-auto min-w-0 max-w-4xl flex-auto">
+		<main id="main-content" class="relative mx-auto min-w-0 max-w-4xl flex-auto">
 			{#key data.url}
 				<article
 					in:fly={{ y: -5, duration: 500, delay: 500 }}
