@@ -6,10 +6,6 @@
 	import type { ResolvedProps } from "radix-svelte/internal/helpers";
 
 	let rootChecked: boolean = (browser && localStorage.getItem("colorTheme") === "dark") ?? false;
-	let rootRequired: boolean;
-	let rootDisabled: boolean;
-	let rootName: string;
-	let rootValue: string;
 
 	const setColorTheme = (theme: "light" | "dark") => {
 		localStorage.setItem("colorTheme", theme);
@@ -26,12 +22,8 @@
 </script>
 
 <Switch.Root
-	class="relative h-7 w-12 cursor-default rounded-full bg-accent outline-none ring-2 ring-primary/40"
+	class="relative h-7 w-12 cursor-default rounded-full bg-accent outline-none ring-2 ring-primary/40 focus:ring-primary"
 	bind:checked={rootChecked}
-	bind:required={rootRequired}
-	bind:disabled={rootDisabled}
-	bind:name={rootName}
-	bind:value={rootValue}
 >
 	<Switch.Thumb
 		class="peer absolute bottom-0 left-1 top-0 z-10 my-auto block h-5 w-5 rounded-full bg-primary shadow-xl transition-transform will-change-transform duration-500 data-[state=checked]:translate-x-5"

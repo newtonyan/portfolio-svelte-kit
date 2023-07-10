@@ -11,7 +11,7 @@
 		--popover-foreground: 287 40% 15%;
 		--border: 214.3 31.8% 91.4%;
 		--input: 214.3 31.8% 91.4%;
-		--card: 287 20% 93%;
+		--card: 287 20% 95%;
 		--card-foreground: 287 40% 15%;
 		--primary: 287 46% 30%;
 		--primary-foreground: 210 40% 98%;
@@ -26,6 +26,19 @@
 		--code: 287 25% 20%;
 		--code-foreground: 35 88% 72%;
 		--body: 287 10% 20%;
+
+		--shiki-color-text: hsl(248, 19%, 40%);
+		/* --shiki-color-background: hsl(32, 57%, 95%); original theme color */
+		--shiki-color-background: hsl(287, 20%, 95%);
+		--shiki-token-constant: hsl(248, 19%, 40%);
+		--shiki-token-string: hsl(35, 81%, 56%);
+		--shiki-token-comment: hsl(257, 9%, 61%);
+		--shiki-token-keyword: hsl(197, 53%, 34%);
+		--shiki-token-parameter: hsl(268, 21%, 57%);
+		--shiki-token-function: hsl(3, 53%, 67%);
+		--shiki-token-string-expression: hsl(35, 81%, 56%);
+		--shiki-token-punctuation: hsl(248, 15%, 61%);
+		--shiki-token-link: hsl(0, 100%, 47%);
 	}
 	.dark {
 		--background: 0 0% 8%;
@@ -38,9 +51,9 @@
 		--popover-foreground: 215 20.2% 65.1%;
 		--border: 287 6% 13%;
 		--input: 287 6% 13%;
-		--card: 287 10% 12%;
+		--card: 287 14% 12%;
 		--card-foreground: 287 7% 100%;
-		--primary: 287 46% 55%;
+		--primary: 287 40% 53%;
 		--primary-foreground: 210 40% 98%;
 		--secondary: 35 81% 56%;
 		--secondary-foreground: 210 40% 98%;
@@ -51,6 +64,19 @@
 		--code: 287 10% 90%;
 		--code-foreground: 35 81% 56%;
 		--body: 287 0% 80%;
+
+		--shiki-color-text: hsl(245, 50%, 91%);
+		/* --shiki-color-background: #232136; original theme color*/
+		--shiki-color-background: hsl(287, 14%, 12%);
+		--shiki-token-constant: hsl(245, 50%, 91%);
+		--shiki-token-string: hsl(35, 88%, 72%);
+		--shiki-token-comment: hsl(249, 12%, 47%);
+		--shiki-token-keyword: hsl(197, 48%, 47%);
+		--shiki-token-parameter: hsl(267, 57%, 78%);
+		--shiki-token-function: hsl(2, 66%, 75%);
+		--shiki-token-string-expression: hsl(35, 88%, 72%);
+		--shiki-token-punctuation: hsl(248, 15%, 61%);
+		--shiki-token-link: hsl(0, 100%, 47%);
 	}
 }
 @layer base {

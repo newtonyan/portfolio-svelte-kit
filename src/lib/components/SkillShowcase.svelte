@@ -5,13 +5,13 @@
 	export let list: Stack[];
 </script>
 
-<div class={`not-prose grid grid-cols-1 gap-8 rounded-lg bg-card p-8 sm:grid-cols-5`}>
+<div class={`not-prose grid grid-cols-1 gap-8 rounded-lg bg-code p-8 sm:grid-cols-5`}>
 	{#each list as skill}
 		<a
 			href={skill.website}
 			target="_blank"
 			rel="nofollow noreferrer"
-			class="rounded-lg p-2 text-foreground transition duration-200 ease-in-out hover:scale-105"
+			class="rounded-lg p-2 text-code-foreground transition duration-200 ease-in-out hover:scale-105"
 		>
 			<div class="flex flex-1 flex-col items-center">
 				<Icon class="text-5xl" icon={skill.icon} />

@@ -47,8 +47,8 @@ export default {
 					foreground: "hsl(var(--card-foreground))"
 				},
 				code: {
-					DEFAULT: "hsl(var(--code))",
-					foreground: "hsl(var(--code-foreground))"
+					DEFAULT: "var(--shiki-color-background)",
+					foreground: "var(--shiki-color-text)"
 				},
 				body: {
 					DEFAULT: "hsl(var(--body))"
@@ -67,11 +67,12 @@ export default {
 				DEFAULT: {
 					css: {
 						"code:not(pre *)": {
-							backgroundColor: "hsl(var(--code))",
-							color: "hsl(var(--code-foreground))",
+							backgroundColor: "var(--shiki-color-background)",
+							color: "var(--shiki-token-string)",
 							padding: `0 ${theme("spacing.1")}`,
 							margin: `0 ${theme("spacing.1")}`,
-							borderRadius: theme("borderRadius.DEFAULT")
+							borderRadius: theme("borderRadius.DEFAULT"),
+							border: `solid ${theme("borderWidth.DEFAULT")} ${theme("colors.accent.DEFAULT")}`
 						}
 					}
 				}

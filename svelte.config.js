@@ -5,12 +5,12 @@ import shiki from "shiki";
 import rehypeSlug from "rehype-slug";
 
 async function highlighter(code, lang) {
-	const highlighter = await shiki.getHighlighter({ theme: "rose-pine-moon" });
+	const highlighter = await shiki.getHighlighter({ theme: "css-variables" });
 	const tokens = highlighter.codeToThemedTokens(code, lang);
 
 	const html = escapeSvelte(
 		shiki.renderToHtml(tokens, {
-			bg: "hsl(var(--code))"
+			bg: "var(--shiki-color-background)"
 		})
 	);
 	return `{@html \`${html}\` }`;
