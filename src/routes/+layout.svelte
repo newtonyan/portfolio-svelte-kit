@@ -38,7 +38,9 @@
 				<SocialMedia class="mt-8" />
 			</div>
 		</aside>
-		<main id="main-content" class="relative mx-auto min-w-0 max-w-4xl flex-auto">
+		<main class="relative mx-auto min-w-0 max-w-4xl flex-auto">
+			<!-- svelte-ignore a11y-missing-content -->
+			<a id="main-content" class="absolute -top-full" />
 			{#key data.url}
 				<article
 					in:fly={{ y: -5, duration: 500, delay: 500 }}
