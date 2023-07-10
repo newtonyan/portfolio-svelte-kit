@@ -36,7 +36,7 @@
 									<span
 										class={clsx(
 											active &&
-												"bg-gradient-to-r from-primary to-indigo-500 bg-clip-text font-bold text-transparent before:mr-1 before:content-['<'] after:ml-1 after:content-['/>']",
+												"bg-gradient-to-r from-primary to-indigo-600 bg-clip-text font-bold text-transparent before:mr-1 before:content-['<'] after:ml-1 after:content-['/>']",
 											!active &&
 												"group-hover:animate-cursor-blink group-hover:border-r-2 group-hover:pr-[1px] group-focus-visible:animate-cursor-blink group-focus-visible:border-r-2 group-focus-visible:pr-[1px]"
 										)}>{child.title}</span
