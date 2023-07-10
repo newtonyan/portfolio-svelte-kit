@@ -48,6 +48,8 @@ export type MenuGroup = {
 export type Stack = {
 	name: string;
 	level: "intermediate" | "proficient";
-	icon: IconifyIcon;
+	icon: { light: IconifyIcon; dark?: IconifyIcon };
 	website?: string;
 };
+
+export type ColorTheme = "light" | "dark";

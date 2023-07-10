@@ -9,7 +9,6 @@
 	import "@fontsource-variable/lexend";
 	import "@fontsource-variable/fira-code";
 	import { fly } from "svelte/transition";
-	import ThemeToggle from "$components/ThemeToggle.svelte";
 
 	export let data;
 

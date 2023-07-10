@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { Stack } from "$lib/types";
+	import type { ColorTheme, Stack } from "$lib/types";
 	import Icon from "@iconify/svelte";
+	import { colorTheme } from "$lib/store";
 
 	export let list: Stack[];
 </script>
@@ -14,7 +15,7 @@
 			class="rounded-lg p-2 text-code-foreground transition duration-200 ease-in-out hover:scale-105"
 		>
 			<div class="flex flex-1 flex-col items-center">
-				<Icon class="text-5xl" icon={skill.icon} />
+				<Icon class="text-5xl" icon={skill.icon[$colorTheme] ?? skill.icon.light} />
 				<span class="mt-3 text-center font-mono text-sm font-semibold">{skill.name}</span>
 			</div>
 		</a>

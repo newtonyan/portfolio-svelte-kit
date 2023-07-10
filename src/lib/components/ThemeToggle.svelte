@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { browser } from "$app/environment";
-	import { Button } from "$components/ui/button";
+	import { colorTheme } from "$lib/store";
 	import { Moon, Sun } from "lucide-svelte";
 	import { Switch } from "radix-svelte";
-	import type { ResolvedProps } from "radix-svelte/internal/helpers";
 
-	let rootChecked: boolean = (browser && localStorage.getItem("colorTheme") === "dark") ?? false;
+	let rootChecked: boolean = $colorTheme === "dark" ?? false;
 
 	const setColorTheme = (theme: "light" | "dark") => {
 		localStorage.setItem("colorTheme", theme);
+		colorTheme.set(theme);
 		document.body.classList.remove("light", "dark");
 		document.body.classList.add(theme);
 	};
