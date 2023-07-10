@@ -3,6 +3,8 @@
 	import type { MenuGroup, MenuItem } from "$lib/types";
 	import clsx from "clsx";
 	import { SheetClose } from "./ui/sheet";
+	import { ExternalLink } from "lucide-svelte";
+	import resume from "$lib/documents/resume.pdf";
 
 	export let dialogOpen: boolean | undefined = undefined;
 	export let menuGroups: MenuGroup[];
@@ -51,5 +53,28 @@
 				</ul>
 			</div>
 		{/each}
+		<div>
+			<h5 class="font-bold leading-10">Connect</h5>
+			<ul class="space-y-1">
+				<li>
+					<a
+						href={resume}
+						target="_blank"
+						rel="noreferrer nofollow"
+						class="group focus-visible:outline-none"
+					>
+						<div
+							class="group-hover:bg-stone-200 group-focus-visible:bg-stone-200 group-hover:dark:bg-stone-800 group-focus-visible:dark:bg-stone-800"
+						>
+							<span
+								class="inline-flex items-center group-hover:animate-cursor-blink group-hover:border-r-2 group-focus-visible:animate-cursor-blink group-focus-visible:border-r-2 group-focus-visible:pr-[1px]"
+							>
+								Resume <ExternalLink class="h-4" />
+							</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </nav>

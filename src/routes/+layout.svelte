@@ -33,7 +33,7 @@
 	<Header {menuGroups} />
 	<div class="relative mx-auto flex max-w-7xl justify-center gap-12 px-8 py-12">
 		<aside class="hidden w-72 lg:relative lg:block lg:flex-none">
-			<div class="sticky top-[7.6rem]">
+			<div class="sticky top-[7.6rem] font-light">
 				<Nav {menuGroups} />
 				<SocialMedia class="mt-8" />
 			</div>

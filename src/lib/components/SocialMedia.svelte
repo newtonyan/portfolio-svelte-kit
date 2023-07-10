@@ -5,12 +5,12 @@
 </script>
 
 <div {...$$props}>
-	<div class="flex gap-2 text-foreground/70">
+	<div class="flex gap-2 text-muted-foreground">
 		<a
 			href="https://github.com/newtonyan"
 			target="_blank"
 			rel="nofollow noreferrer"
-			class="hover:text-primary"
+			class="rounded-md hover:bg-gradient-to-r hover:from-primary hover:to-indigo-500 hover:text-primary-foreground"
 		>
 			<Icon
 				class="text-4xl transition duration-200 ease-in-out hover:scale-105"
@@ -21,7 +21,7 @@
 			href="https://www.linkedin.com/in/newton-yan-7a6722199/"
 			target="_blank"
 			rel="nofollow noreferrer"
-			class="hover:text-primary"
+			class="rounded-md hover:bg-gradient-to-r hover:from-primary hover:to-indigo-500 hover:text-primary-foreground"
 		>
 			<Icon
 				class="text-4xl transition duration-200 ease-in-out hover:scale-105"
