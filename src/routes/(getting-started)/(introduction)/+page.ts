@@ -28,31 +28,26 @@ export const load = (() => {
 	const favouriteStack: Stack[] = [
 		{
 			name: "TypeScript",
-			level: "proficient",
 			icon: { light: typescriptIcon },
 			website: "https://www.typescriptlang.org/"
 		},
 		{
 			name: "SvelteKit",
-			level: "proficient",
 			icon: { light: svelteIcon },
 			website: "https://kit.svelte.dev/"
 		},
 		{
 			name: "Tailwind CSS",
-			level: "proficient",
 			icon: { light: tailwindIconDark, dark: tailwindIcon },
 			website: "https://tailwindcss.com/"
 		},
 		{
 			name: "MongoDB",
-			level: "proficient",
 			icon: { light: mongoIcon },
 			website: "https://www.mongodb.com/"
 		},
 		{
 			name: "Prisma",
-			level: "proficient",
 			icon: { light: prismaIcon },
 			website: "https://www.prisma.io/"
 		}
@@ -60,49 +55,41 @@ export const load = (() => {
 	const intermediateStack: Stack[] = [
 		{
 			name: "Ionic",
-			level: "intermediate",
 			icon: { light: ionicIcon },
 			website: "https://ionicframework.com/"
 		},
 		{
 			name: "Angular",
-			level: "intermediate",
 			icon: { light: angularIconDark, dark: angularIcon },
 			website: "https://angular.io/"
 		},
 		{
 			name: "React",
-			level: "intermediate",
 			icon: { light: reactIconDark, dark: reactIcon },
 			website: "https://react.dev/"
 		},
 		{
 			name: "Next.js",
-			level: "intermediate",
 			icon: { light: nextIconDark, dark: nextIcon },
 			website: "https://nextjs.org/"
 		},
 		{
 			name: "Express",
-			level: "intermediate",
 			icon: { light: expressIconDark, dark: expressIcon },
 			website: "https://expressjs.com/"
 		},
 		{
 			name: "Sanity",
-			level: "intermediate",
 			icon: { light: sanityIcon },
 			website: "https://www.sanity.io/"
 		},
 		{
 			name: "Java",
-			level: "intermediate",
 			icon: { light: javaIconDark, dark: javaIcon },
 			website: "https://www.java.com/en/"
 		},
 		{
 			name: "Unity",
-			level: "intermediate",
 			icon: { light: unityIconDark, dark: unityIcon },
 			website: "https://unity.com/"
 		}
@@ -110,24 +97,20 @@ export const load = (() => {
 	const otherTools: Stack[] = [
 		{
 			name: "Photoshop",
-			level: "proficient",
 			icon: { light: photshopIcon }
 		},
 		{
 			name: "Premiere Pro",
-			level: "proficient",
 			icon: { light: premiereIcon }
 		},
 		{
 			name: "After Effects",
-			level: "proficient",
 			icon: { light: afterEffectsIcon }
 		}
 	];
 	const certificates: Stack[] = [
 		{
 			name: "Professional Scrum Master II",
-			level: "proficient",
 			icon: { light: "/psmii.png" }
 		}
 	];
