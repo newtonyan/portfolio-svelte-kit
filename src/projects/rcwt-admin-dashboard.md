@@ -5,7 +5,7 @@ description: Ipsum dolor non eu dolor aliqua culpa est Lorem ut labore magna ani
 skills:
   - svelte
   - tailwindcss
-published: true
+published: false
 category: Web app
 tags:
   - Full Stack
