@@ -12,7 +12,7 @@ tags:
   - Website
 url: https://www.raleighmountainmarathon.hk
 thumbnail: thumbnail.png
-date: April 2023
+date: 2023-04-15
 ---
 
 ## Overview

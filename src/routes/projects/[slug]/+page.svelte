@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Calendar, ExternalLink, Github, Hash } from "lucide-svelte";
+	import dayjs from "dayjs";
 	export let data;
 </script>
 
@@ -32,7 +33,7 @@
 		{#if data.meta.date}
 			<li class="flex items-center gap-2">
 				<Calendar size={16} />
-				<span>{data.meta.date}</span>
+				<span>{dayjs(data.meta.date).format("MMMM YYYY")}</span>
 			</li>
 		{/if}
 		{#if data.meta.tags && data.meta.tags.length}

@@ -9,7 +9,7 @@ tags:
   - Game
   - AR
 thumbnail:
-date: December 2018
+date: 2018-12-15
 ---
 
 ## Overview
