@@ -29,6 +29,7 @@ export type Project = {
 	published: boolean;
 	category: Category;
 	url?: string;
+	displayUrl?: string;
 	githubRepo?: string;
 	thumbnail?: string;
 	date: string;

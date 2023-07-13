@@ -11,6 +11,7 @@ tags:
   - Full Stack
   - Website
 url: https://www.raleighmountainmarathon.hk
+displayUrl: raleighmountainmarathon.hk
 thumbnail: thumbnail.png
 date: 2023-04-15
 ---

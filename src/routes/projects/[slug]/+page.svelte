@@ -15,31 +15,38 @@
 <div role="doc-subtitle" class="font-bold text-foreground">Project showcase</div>
 <h1>{data.meta.title}</h1>
 <div class="not-prose mb-8">
-	<ul class="font-medium text-muted-foreground">
+	<ul class="break-all font-medium text-muted-foreground">
 		{#if data.meta.url}
-			<li class="flex items-center gap-2">
-				<ExternalLink size={16} /><a href={data.meta.url} target="_blank" rel="nofollow noreferrer"
-					>{data.meta.url}</a
+			<li class="">
+				<ExternalLink size={16} class="mr-2 inline-block" /><a
+					href={data.meta.url}
+					target="_blank"
+					rel="nofollow noreferrer"
+					><span class="align-middle">{data.meta.displayUrl ?? data.meta.url}</span></a
 				>
 			</li>
 		{/if}
 		{#if data.meta.githubRepo}
-			<li class="flex items-center gap-2">
-				<Github size={16} /><a href={data.meta.githubRepo} target="_blank" rel="nofollow noreferrer"
-					>GitHub repository</a
+			<li class="">
+				<Github size={16} class="mr-2 inline-block" /><a
+					href={data.meta.githubRepo}
+					target="_blank"
+					rel="nofollow noreferrer"><span class="align-middle">GitHub repository</span></a
 				>
 			</li>
 		{/if}
 		{#if data.meta.date}
-			<li class="flex items-center gap-2">
-				<Calendar size={16} />
-				<span>{dayjs(data.meta.date).format("MMMM YYYY")}</span>
+			<li class="">
+				<Calendar size={16} class="mr-2 inline-block" /><span class="align-middle"
+					>{dayjs(data.meta.date).format("MMMM YYYY")}</span
+				>
 			</li>
 		{/if}
 		{#if data.meta.tags && data.meta.tags.length}
-			<li class="flex items-center gap-2">
-				<Hash size={16} />
-				<span>{data.meta.tags.join(", ")}</span>
+			<li class="">
+				<Hash size={16} class="mr-2 inline-block" /><span class="align-middle"
+					>{data.meta.tags.join(", ")}</span
+				>
 			</li>
 		{/if}
 	</ul>

@@ -9,6 +9,7 @@ category: Website
 tags:
   - Website
 url: https://www.newtonyan.com
+displayUrl: newtonyan.com
 githubRepo: https://github.com/newtonyan/portfolio-svelte-kit
 thumbnail:
 date: 2023-07-15
