@@ -23,6 +23,8 @@ import ionicIcon from "@iconify/icons-logos/ionic-icon";
 import photshopIcon from "@iconify/icons-skill-icons/photoshop";
 import premiereIcon from "@iconify/icons-skill-icons/premiere";
 import afterEffectsIcon from "@iconify/icons-skill-icons/aftereffects";
+import mysqlIconDark from "@iconify/icons-skill-icons/mysql-dark";
+import mysqlIcon from "@iconify/icons-skill-icons/mysql-light";
 
 export const load = (() => {
 	const favouriteStack: Stack[] = [
@@ -92,6 +94,11 @@ export const load = (() => {
 			name: "Unity",
 			icon: { light: unityIconDark, dark: unityIcon },
 			website: "https://unity.com/"
+		},
+		{
+			name: "MySQL",
+			icon: { light: mysqlIconDark, dark: mysqlIcon },
+			website: "https://www.mysql.com/"
 		}
 	];
 	const otherTools: Stack[] = [
