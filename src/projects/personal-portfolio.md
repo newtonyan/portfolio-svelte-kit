@@ -1,6 +1,6 @@
 ---
 title: Personal Portfolio
-description: Static website development using headless CMS + Full stack web application
+description: Static personal portfolio site using SvelteKit and Markdown
 skills:
   - svelte
   - tailwindcss

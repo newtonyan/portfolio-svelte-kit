@@ -1,7 +1,7 @@
 ---
 title: Raleigh Challenge - Mountain Marathon
 shortTitle: RCMM
-description: Static website development using headless CMS + Full stack web application
+description: Developed a static website using a headless CMS, plus a full stack web application for race registration.
 skills:
   - svelte
   - tailwindcss
@@ -37,4 +37,6 @@ date: April 2023
     </div>
 </div>
 
-## Mardown
+## Overview
+
+This is a voluntary project for Raleigh Hong Kong.

@@ -1,3 +1,17 @@
+---
+title: Work Experience
+description: A brief overview of my work experience
+---
+
+<svelte:head>
+
+<title>{title} | Newton Yan</title>
+<meta property="og:type" content="article" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="description" content={description} />
+</svelte:head>
+
 # Work Experience
 
 Belun Technology Company Limited `(Sep 2021 - Apr 2023)`
@@ -8,10 +22,10 @@ workExperience.push({
 	title: "Programmer Analyst",
 	jobDuties: [
 		"Analyzed user requirements and designed solutions that meet their needs",
-		"Collaborated with the backend team and developed new web applications with Ionic(Angular) and SvelteKit",
+		"Developed web applications with Ionic(Angular) and SvelteKit",
 		"Provided technical support and troubleshooting for existing web applications",
 		"Implemented company website improvements and enhancements",
-		"Collaborated with cross-functional teams by leveraging issue and project tracking tools like JIRA"
+		"Collaborated with cross-functional teams by leveraging tools such as JIRA"
 	]
 });
 ```
@@ -24,7 +38,7 @@ workExperience.push({
 	title: "Analyst Programmer",
 	jobDuties: [
 		"Developed responsive web application with Vue.js",
-		"Developed a REST API using Spring framework",
+		"Assisted in the development of the REST API using Spring Boot",
 		"Collaborated with end-users to define application requirements"
 	]
 });
@@ -36,7 +50,7 @@ workExperience.push({
 	title: "Programmer",
 	jobDuties: [
 		"Developed web application with Java and Apache Struts Framework",
-		"Implemented improvements and enhancements on existing web application (.NET framework)"
+		"Enhanced existing web applications on the .NET framework"
 	]
 });
 ```

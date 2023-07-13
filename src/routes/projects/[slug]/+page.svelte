@@ -4,9 +4,11 @@
 </script>
 
 <svelte:head>
-	<title>{data.meta.title}</title>
+	<title>Showcase: {data.meta.title} | Newton Yan</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.description} />
+	<meta property="description" content={data.meta.description} />
 </svelte:head>
 
 <div role="doc-subtitle" class="font-bold text-foreground">Project showcase</div>

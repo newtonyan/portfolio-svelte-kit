@@ -1,3 +1,8 @@
+---
+title: Introduction
+description: To get you started, this article will provide an overview of my education, languages, skills and certificates.
+---
+
 <script lang="ts">
     import SkillShowcase from '$components/SkillShowcase.svelte';
 	export let data;
@@ -5,19 +10,22 @@
 
 <svelte:head>
 
-<title>Introduction | Newton Yan</title>
+<title>{title} | Newton Yan</title>
+<meta property="og:type" content="article" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="description" content={description} />
 </svelte:head>
 
 # Introduction
 
-To get you started, this article will provide an overview of my education, languages and skills. This information will help you get to know me better and give you an idea of my background.
+To get you started, this article will provide an overview of my education, languages, skills and certificates. This information will help you get to know me better and give you an idea of my background.
 
 ## Overview
 
-I’m `Newton Yan` from Hong Kong, currently based in `Toronto, ON, Canada`. A passionate frontend web developer with 3 years of experience in creating visually engaging and responsive web
-application. Proficient in various web frameworks such as `Angular` and `SvelteKit`. Strong problem-solving skills and
-able to work collaboratively in a team environment. Eager to continue learning new technologies and adapting to new
-challenges.
+I’m `Newton Yan` from Hong Kong, currently based in `Toronto, ON, Canada`. A passionate frontend web developer with 3 years of experience in creating high quality website and responsive web
+application. I have experience working with and have solid understanding in various web frameworks such as `Angular` and `SvelteKit`. Strong problem-solving skills and
+able to work collaboratively in a team environment. I'm eager to continue learning new technologies and adapting to new challenges.
 
 ## Education
 
