@@ -25,7 +25,7 @@ To get you started, this article will provide an overview of my education, langu
 ## Overview
 
 <div class="not-prose">
-		<img class="h-56 w-56 rounded-lg ring-primary/70 ring-4 bg-secondary" src="/avatar.png">
+		<img class="h-56 w-56 rounded-lg ring-primary/70 ring-4 bg-secondary" src="/avatar.png" alt="Avatar">
 </div>
 
 I’m `Newton Yan` from Hong Kong, currently based in `Toronto, ON, Canada`. A passionate full stack web developer with 3 years of experience in creating high quality website and responsive web
