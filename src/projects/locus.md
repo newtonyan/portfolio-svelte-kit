@@ -28,7 +28,7 @@ scholars.
 
 <div class="grid gird-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-4 not-prose">
     <div class="grid gap-4 content-start">
-      <AspectRatio ratio={9 / 16}>
+      <AspectRatio ratio={9 / 16} class="bg-accent rounded-sm">
           <video class="rounded-sm" autoplay loop muted playsinline>
             <source src="/projects/locus/gate-of-wisdom.mp4" type="video/mp4" />
           </video>
@@ -38,7 +38,7 @@ scholars.
         </div>
     </div>
     <div class="grid gap-4 content-start">
-      <AspectRatio ratio={9 / 16}>
+      <AspectRatio ratio={9 / 16} class="bg-accent rounded-sm">
           <video class="rounded-sm" autoplay loop muted playsinline>
             <source src="/projects/locus/dem-beat.mp4" type="video/mp4" />
           </video>
@@ -48,7 +48,7 @@ scholars.
         </div>
     </div>
     <div class="grid gap-4 content-start">
-      <AspectRatio ratio={9 / 16}>
+      <AspectRatio ratio={9 / 16} class="bg-accent rounded-sm">
           <video class="rounded-sm" autoplay loop muted playsinline>
             <source src="/projects/locus/overworld.mp4" type="video/mp4" />
           </video>

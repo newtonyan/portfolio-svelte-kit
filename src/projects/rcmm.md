@@ -102,22 +102,22 @@ I have developed a `Website` and a `Registration System` for the upcoming event 
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
     <div class="grid gap-4 content-start">
-        <AspectRatio ratio={9 / 16}>
-            <img class="h-auto max-w-full rounded-sm bg-secondary" src="/projects/rcmm/full-page.png" alt="Website mockup - full page"/>
+        <AspectRatio ratio={9 / 16} class="bg-secondary rounded-sm">
+            <img class="h-auto max-w-full" src="/projects/rcmm/full-page.png" alt="Website mockup - full page"/>
         </AspectRatio>
-        <AspectRatio ratio={4 / 3}>
-            <img class="h-auto max-w-full rounded-sm bg-secondary" src="/projects/rcmm/registration-mobile.png" alt="Registration system mockup - mobile"/>
+        <AspectRatio ratio={4 / 3} class="bg-secondary rounded-sm">
+            <img class="h-auto max-w-full" src="/projects/rcmm/registration-mobile.png" alt="Registration system mockup - mobile"/>
         </AspectRatio>
     </div>
     <div class="grid gap-4 content-start">
-		<AspectRatio ratio={4 / 3}>
-			<img class="h-auto max-w-full rounded-sm bg-secondary" src="/projects/rcmm/mobile.png" alt="Website mockup - mobile"/>
+		<AspectRatio ratio={4 / 3} class="bg-secondary rounded-sm">
+			<img class="h-auto max-w-full" src="/projects/rcmm/mobile.png" alt="Website mockup - mobile"/>
 		</AspectRatio>
-        <AspectRatio ratio={4 / 3}>
-			<img class="h-auto max-w-full rounded-sm bg-secondary" src="/projects/rcmm/example-page.png" alt="Website mockup - example page"/>
+        <AspectRatio ratio={4 / 3} class="bg-secondary rounded-sm">
+			<img class="h-auto max-w-full" src="/projects/rcmm/example-page.png" alt="Website mockup - example page"/>
 		</AspectRatio>  
-		<AspectRatio ratio={4 / 3}>
-			<img class="h-auto max-w-full rounded-sm bg-secondary" src="/projects/rcmm/dashboard.png" alt="Registration system mockup - dashboard"/>
+		<AspectRatio ratio={4 / 3} class="bg-secondary rounded-sm">
+			<img class="h-auto max-w-full" src="/projects/rcmm/dashboard.png" alt="Registration system mockup - dashboard"/>
 		</AspectRatio> 
     </div>
 </div>
