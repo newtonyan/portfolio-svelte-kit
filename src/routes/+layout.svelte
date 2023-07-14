@@ -45,7 +45,7 @@
 				<article
 					in:fly={{ y: -5, duration: 500, delay: 500 }}
 					out:fly={{ y: 5, duration: 500 }}
-					class="prose max-w-none prose-headings:text-foreground prose-h1:inline-block prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:to-indigo-700 prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:font-bold prose-h1:text-transparent prose-p:text-body prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:transition-colors prose-pre:duration-500"
+					class="prose max-w-none prose-headings:text-foreground prose-h1:inline-block prose-h1:bg-gradient-to-r prose-h1:from-primary prose-h1:to-indigo-700 prose-h1:bg-clip-text prose-h1:pb-2 prose-h1:font-bold prose-h1:text-transparent prose-p:text-body prose-a:text-primary prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:transition-colors prose-pre:duration-500"
 				>
 					<slot />
 				</article>

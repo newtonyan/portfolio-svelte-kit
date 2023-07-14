@@ -87,4 +87,4 @@ In order to play the mini-game, the user has to scan the plaque fixed in front o
 
 #### Extended Tracking
 
-"Dem Beat", short for "Demostration of beat", is a unique culture originated at CUHK. It usually involves a group of people creating rhythmic beats by clapping their hands and stomping on the ground. We recreated the famous ["Woo Sing Beat"](https://www.youtube.com/watch?v=EIbXvGFBNYc) into a rhythm game integrated with AR. With `Extended Tracking`, users can place the avatar on the ground and the avatar will still be fixed to the same spot as they move around.
+`Dem Beat`, short for "Demostration of beat", is a unique culture originated at CUHK. It usually involves a group of people creating rhythmic beats by clapping their hands and stomping on the ground. We recreated the famous ["Woo Sing Beat"](https://www.youtube.com/watch?v=EIbXvGFBNYc) into a rhythm game integrated with AR. With `Extended Tracking`, users can place the avatar on the ground and the avatar will still be fixed to the same spot as they move around.

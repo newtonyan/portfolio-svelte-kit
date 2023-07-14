@@ -9,7 +9,7 @@
 	{#each projects as project}
 		<div>
 			<a href={`/projects/${project.slug}`} class="group">
-				<AspectRatio ratio={3 / 2} class="bg-accent">
+				<AspectRatio ratio={3 / 2} class="bg-secondary">
 					{#if project.thumbnail}
 						<img
 							src={`/projects/${project.slug}/${project.thumbnail}`}
