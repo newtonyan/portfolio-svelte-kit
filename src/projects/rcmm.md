@@ -102,7 +102,7 @@ I have developed a `Website` and a `Registration System` for the upcoming event 
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
     <div class="grid gap-4 content-start">
-        <AspectRatio ratio={10 / 21}>
+        <AspectRatio ratio={9 / 16}>
             <img class="h-auto max-w-full rounded-sm bg-secondary" src="/projects/rcmm/full-page.png" alt="Website mockup - full page"/>
         </AspectRatio>
         <AspectRatio ratio={4 / 3}>
