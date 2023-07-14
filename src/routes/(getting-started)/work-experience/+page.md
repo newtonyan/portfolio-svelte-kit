@@ -22,9 +22,9 @@ workExperience.push({
 	title: "Programmer Analyst",
 	jobDuties: [
 		"Analyzed user requirements and designed solutions that meet their needs",
-		"Developed web applications with Ionic(Angular) and SvelteKit",
+		"Developed web applications with Ionic (Angular) and SvelteKit",
 		"Provided technical support and troubleshooting for existing web applications",
-		"Implemented company website improvements and enhancements",
+		"Enhanced and maintained company website",
 		"Collaborated with cross-functional teams by leveraging tools such as JIRA"
 	]
 });
@@ -50,7 +50,7 @@ workExperience.push({
 	title: "Programmer",
 	jobDuties: [
 		"Developed web application with Java and Apache Struts Framework",
-		"Enhanced existing web applications on the .NET framework"
+		"Enhanced existing web applications on .NET framework"
 	]
 });
 ```
