@@ -11,8 +11,10 @@ tags:
 url: https://www.newtonyan.com
 displayUrl: newtonyan.com
 githubRepo: https://github.com/newtonyan/portfolio-svelte-kit
-thumbnail:
+thumbnail: thumbnail.png
 date: 2023-07-15
 ---
 
-## Mardown
+## Overview
+
+My personal portfolio website
