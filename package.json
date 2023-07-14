@@ -17,7 +17,6 @@
 		"@iconify/icons-mdi": "^1.2.46",
 		"@iconify/icons-skill-icons": "^1.2.1",
 		"@iconify/svelte": "^3.1.4",
-		"@rgossiaux/svelte-headlessui": "^2.0.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-vercel": "^3.0.2",
 		"@sveltejs/kit": "^1.20.4",
