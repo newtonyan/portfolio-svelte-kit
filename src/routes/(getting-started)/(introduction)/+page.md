@@ -5,6 +5,7 @@ description: To get you started, this article will provide an overview of my edu
 
 <script lang="ts">
     import SkillShowcase from '$components/SkillShowcase.svelte';
+	import { AspectRatio } from "$components/ui/aspect-ratio";
 	export let data;
 </script>
 
@@ -22,6 +23,10 @@ description: To get you started, this article will provide an overview of my edu
 To get you started, this article will provide an overview of my education, languages, skills and certificates. This information will help you get to know me better and give you an idea of my background.
 
 ## Overview
+
+<div class="not-prose">
+		<img class="h-56 w-56 rounded-lg ring-primary/70 ring-4 bg-secondary" src="/avatar.png">
+</div>
 
 I’m `Newton Yan` from Hong Kong, currently based in `Toronto, ON, Canada`. A passionate full stack web developer with 3 years of experience in creating high quality website and responsive web
 application. I have experience working with and have solid understanding in various web frameworks such as `Angular` and `SvelteKit`. Strong problem-solving skills and
