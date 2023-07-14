@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Showcase: {data.meta.title} | Newton Yan</title>
+	<title>Showcase: {data.meta.shortTitle ?? data.meta.title} | Newton Yan</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:description" content={data.meta.description} />
