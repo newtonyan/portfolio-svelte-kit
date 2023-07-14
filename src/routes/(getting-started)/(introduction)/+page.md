@@ -15,7 +15,7 @@ description: To get you started, this article will provide an overview of my edu
 <meta property="og:type" content="article" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="description" content={description} />
+<meta name="description" content={description} />
 </svelte:head>
 
 # Introduction

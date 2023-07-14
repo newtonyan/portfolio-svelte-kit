@@ -9,7 +9,7 @@ description: Discover my professional journey and work experience as a web devel
 <meta property="og:type" content="article" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="description" content={description} />
+<meta name="description" content={description} />
 </svelte:head>
 
 # Work Experience

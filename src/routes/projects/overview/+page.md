@@ -14,7 +14,7 @@ description: Explore a collection of projects I have completed in the past, show
 <meta property="og:type" content="article" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="description" content={description} />
+<meta name="description" content={description} />
 </svelte:head>
 
 # Overview
