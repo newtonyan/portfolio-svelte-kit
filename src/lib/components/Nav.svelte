@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { page } from "$app/stores";
-	import type { MenuGroup, MenuItem } from "$lib/types";
+	import type { MenuGroup } from "$lib/types";
 	import clsx from "clsx";
-	import { SheetClose } from "./ui/sheet";
 	import { ExternalLink } from "lucide-svelte";
 	import resume from "$lib/documents/Newton_Yan_resume.pdf";
 
