@@ -1,11 +1,7 @@
 ---
 title: Personal Portfolio
 description: Static personal portfolio site using SvelteKit and Markdown
-skills:
-  - svelte
-  - tailwindcss
 published: true
-category: Website
 tags:
   - Website
 url: https://www.newtonyan.com

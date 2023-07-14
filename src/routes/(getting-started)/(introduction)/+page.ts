@@ -1,4 +1,4 @@
-import type { Skill, Stack } from "$lib/types";
+import type { Stack } from "$lib/types";
 import type { PageLoad } from "./$types";
 import typescriptIcon from "@iconify/icons-skill-icons/typescript";
 import svelteIcon from "@iconify/icons-skill-icons/svelte";

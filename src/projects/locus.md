@@ -1,10 +1,7 @@
 ---
 title: LOCUS
 description: Created a augmented reality mobile game prototype inspired by Pokemon Go with Unity.
-skills:
-  - unity
 published: true
-category: Website
 tags:
   - Mobile Game
   - AR
