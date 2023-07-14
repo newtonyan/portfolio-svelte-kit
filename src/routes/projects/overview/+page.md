@@ -19,7 +19,7 @@ description: A brief overview of projects I have done in the past
 
 # Overview
 
-As a frontend web developer, I specialize in creating responsive web applications using various frontend frameworks. I have a passion for creating intuitive and user-friendly interfaces that are optimized for all devices. My projects are designed and developed with the latest technologies and trends in mind, ensuring that they are not only functional, but also visually appealing.
+As a full stack web developer, I specialize in creating responsive web applications using various web frameworks. I have a passion for creating intuitive and user-friendly interfaces that are optimized for all devices. My projects are designed and developed with the latest technologies and trends in mind, ensuring that they are not only functional, but also visually appealing.
 
 ## Showcase
 

@@ -5,7 +5,7 @@
 	export let projects: Project[];
 </script>
 
-<div class="not-prose grid grid-cols-1 gap-20 text-foreground md:grid-cols-2 lg:gap-8">
+<div class="not-prose grid grid-cols-1 gap-20 text-foreground md:grid-cols-2 md:gap-8">
 	{#each projects as project}
 		<div>
 			<a href={`/projects/${project.slug}`} class="group">

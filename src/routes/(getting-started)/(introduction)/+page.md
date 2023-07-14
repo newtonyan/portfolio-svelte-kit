@@ -23,7 +23,7 @@ To get you started, this article will provide an overview of my education, langu
 
 ## Overview
 
-I’m `Newton Yan` from Hong Kong, currently based in `Toronto, ON, Canada`. A passionate frontend web developer with 3 years of experience in creating high quality website and responsive web
+I’m `Newton Yan` from Hong Kong, currently based in `Toronto, ON, Canada`. A passionate full stack web developer with 3 years of experience in creating high quality website and responsive web
 application. I have experience working with and have solid understanding in various web frameworks such as `Angular` and `SvelteKit`. Strong problem-solving skills and
 able to work collaboratively in a team environment. I'm eager to continue learning new technologies and adapting to new challenges.
 
