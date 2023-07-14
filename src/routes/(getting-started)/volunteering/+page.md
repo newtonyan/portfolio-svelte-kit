@@ -1,6 +1,6 @@
 ---
 title: Volunteering
-description: A brief overview of my volunteering experience
+description: Explore my dedication to making a difference through volunteering.
 ---
 
 <svelte:head>

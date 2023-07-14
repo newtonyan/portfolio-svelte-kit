@@ -1,6 +1,6 @@
 ---
 title: Work Experience
-description: A brief overview of my work experience
+description: Discover my professional journey and work experience as a web developer.
 ---
 
 <svelte:head>

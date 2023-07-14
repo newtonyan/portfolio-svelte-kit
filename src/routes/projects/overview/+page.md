@@ -1,6 +1,6 @@
 ---
 title: Project Overview
-description: A brief overview of projects I have done in the past
+description: Explore a collection of projects I have completed in the past, showcasing my skills in web development.
 ---
 
 <script lang="ts">
