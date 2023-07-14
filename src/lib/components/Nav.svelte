@@ -4,7 +4,7 @@
 	import clsx from "clsx";
 	import { SheetClose } from "./ui/sheet";
 	import { ExternalLink } from "lucide-svelte";
-	import resume from "$lib/documents/resume.pdf";
+	import resume from "$lib/documents/Newton_Yan_resume.pdf";
 
 	export let dialogOpen: boolean | undefined = undefined;
 	export let menuGroups: MenuGroup[];
