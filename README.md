@@ -1,6 +1,6 @@
 # Portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Get to know me better by visiting my personal website. Here, you can find information about my background, education, and work experience, as well as examples of my previous projects.
 
 ## Developing
 
