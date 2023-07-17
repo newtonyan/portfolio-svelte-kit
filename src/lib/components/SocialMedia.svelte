@@ -11,6 +11,7 @@
 			target="_blank"
 			rel="nofollow noreferrer"
 			class="rounded-md p-0.5 hover:bg-gradient-to-r hover:from-primary hover:to-indigo-600 hover:text-primary-foreground"
+			aria-label="View my GitHub profile"
 		>
 			<Icon
 				class="text-4xl transition duration-200 ease-in-out hover:scale-105"
@@ -22,6 +23,7 @@
 			target="_blank"
 			rel="nofollow noreferrer"
 			class="rounded-md p-0.5 hover:bg-gradient-to-r hover:from-primary hover:to-indigo-600 hover:text-primary-foreground"
+			aria-label="View my LinkedIn profile"
 		>
 			<Icon
 				class="text-4xl transition duration-200 ease-in-out hover:scale-105"

@@ -33,14 +33,14 @@
 	<Header {menuGroups} />
 	<div class="relative mx-auto flex max-w-7xl justify-center gap-12 px-8 py-12">
 		<aside class="hidden w-72 lg:relative lg:block lg:flex-none">
-			<div class="sticky top-[7.6rem] font-light">
+			<div class="sticky top-[7.6rem]">
 				<Nav {menuGroups} />
 				<SocialMedia class="mt-8" />
 			</div>
 		</aside>
 		<main class="relative mx-auto min-w-0 max-w-4xl flex-auto">
 			<!-- svelte-ignore a11y-missing-content -->
-			<a id="main-content" class="absolute -top-full" />
+			<div id="main-content" class="absolute -top-full" />
 			{#key data.url}
 				<article
 					in:fly={{ y: -5, duration: 500, delay: 500 }}

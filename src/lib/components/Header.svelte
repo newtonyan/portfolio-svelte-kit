@@ -31,7 +31,7 @@
 	>
 	<div class="mx-auto flex max-w-7xl items-center justify-between px-8 py-4">
 		<a href="/" class="flex items-center gap-2 sm:gap-4">
-			<img class="h-10 dark:brightness-150" src="/logo.svg" alt="logo" />
+			<img class="h-10 w-10 dark:brightness-150" src="/logo.svg" alt="logo" />
 		</a>
 		<ThemeToggle />
 	</div>

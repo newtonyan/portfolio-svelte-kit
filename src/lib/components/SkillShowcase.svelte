@@ -13,10 +13,11 @@
 <div class={`not-prose grid grid-cols-1 gap-8 rounded-lg bg-code p-8 sm:grid-cols-5`}>
 	{#each list as skill}
 		{@const icon = skill.icon[$colorTheme] ?? skill.icon.light}
-		<a
+		{@const attributes = skill.website ? { target: "_blank", rel: "nofollow noreferrer" } : {}}
+		<svelte:element
+			this={skill.website ? "a" : "div"}
 			href={skill.website}
-			target="_blank"
-			rel="nofollow noreferrer"
+			{...attributes}
 			class="rounded-lg p-2 text-code-foreground transition duration-200 ease-in-out hover:scale-105"
 		>
 			<div class="flex flex-1 flex-col items-center">
@@ -27,6 +28,6 @@
 				{/if}
 				<span class="mt-3 text-center font-mono text-sm font-semibold">{skill.name}</span>
 			</div>
-		</a>
+		</svelte:element>
 	{/each}
 </div>
