@@ -49,7 +49,7 @@
 		"clsx": "^1.2.1",
 		"dayjs": "^1.11.9",
 		"lucide-svelte": "^0.258.0",
-		"radix-svelte": "^0.8.0",
+		"radix-svelte": "^0.9.0",
 		"rehype-slug": "^5.1.0",
 		"remark-toc": "^8.0.1",
 		"shiki": "^0.14.3",
