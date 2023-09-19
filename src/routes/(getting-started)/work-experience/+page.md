@@ -14,6 +14,19 @@ description: Discover my professional journey and work experience as a web devel
 
 # Work Experience
 
+Akex Solutions Inc. `(Aug 2023 - Present)`
+
+```js
+workExperience.push({
+	location: "Canada",
+	title: "E-Commerce and Return Solutions Specialist",
+	jobDuties: [
+		"Managed and optimized e-commerce platform",
+		"Monitored and developed company website"
+	]
+});
+```
+
 Belun Technology Company Limited `(Sep 2021 - Apr 2023)`
 
 ```js
