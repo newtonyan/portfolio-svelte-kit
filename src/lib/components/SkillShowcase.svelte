@@ -26,7 +26,7 @@
 				{:else}
 					<Icon class="text-5xl" {icon} />
 				{/if}
-				<span class="mt-3 text-center font-mono text-sm font-semibold">{skill.name}</span>
+				<span class="mt-3 text-center font-mono text-sm">{skill.name}</span>
 			</div>
 		</svelte:element>
 	{/each}

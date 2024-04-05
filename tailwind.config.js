@@ -60,8 +60,8 @@ export default {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				sans: ["Lexend Variable", ...defaultTheme.fontFamily.sans],
-				mono: ["Fira Code Variable", ...defaultTheme.fontFamily.mono]
+				sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
+				mono: ["Mononoki", ...defaultTheme.fontFamily.mono]
 			},
 			typography: ({ theme }) => ({
 				DEFAULT: {
@@ -72,7 +72,7 @@ export default {
 							padding: `0 ${theme("spacing.1")}`,
 							margin: `0 ${theme("spacing[0.5]")}`,
 							borderRadius: theme("borderRadius.DEFAULT"),
-							border: `solid ${theme("borderWidth.DEFAULT")} ${theme("colors.accent.DEFAULT")}`,
+							border: `solid ${theme("borderWidth.2")} ${theme("colors.accent.DEFAULT")}`,
 							transitionDuration: `${theme("transitionDuration.500")}`,
 							transitionProperty: `${theme("transitionProperty.colors")}`,
 							transitionTimingFunction: `${theme("transitionTimingFunction[in-out]")}`

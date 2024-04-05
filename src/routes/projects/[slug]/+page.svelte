@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Calendar, ExternalLink, Github, Hash } from "lucide-svelte";
+	import { Calendar, ExternalLink, Github, Hash, Link } from "lucide-svelte";
 	import dayjs from "dayjs";
 	export let data;
 </script>
@@ -18,7 +18,7 @@
 	<ul class="break-all font-medium text-muted-foreground">
 		{#if data.meta.url}
 			<li class="">
-				<ExternalLink size={16} class="mr-2 inline-block" /><a
+				<Link size={16} class="mr-2 inline-block" /><a
 					href={data.meta.url}
 					target="_blank"
 					rel="nofollow noreferrer"

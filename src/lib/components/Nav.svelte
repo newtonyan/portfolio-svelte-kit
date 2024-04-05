@@ -13,7 +13,7 @@
 	<div class="flex flex-col gap-8">
 		{#each menuGroups as group}
 			<div>
-				<h5 class="font-bold leading-10">{group.title}</h5>
+				<h5 class="font-extrabold leading-10">{group.title}</h5>
 				<ul class="space-y-1">
 					{#each group.children as child}
 						{@const slug = `${group.slug ? `/${group.slug}` : ""}/${child.slug}`}
