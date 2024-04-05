@@ -2,7 +2,6 @@
 	import { page } from "$app/stores";
 	import type { MenuGroup } from "$lib/types";
 	import clsx from "clsx";
-	import { ExternalLink } from "lucide-svelte";
 	import resume from "$lib/documents/Newton_Yan_resume.pdf";
 
 	export let dialogOpen: boolean | undefined = undefined;
@@ -61,7 +60,39 @@
 							<span
 								class="inline-flex items-center group-hover:animate-cursor-blink group-hover:border-r-2 group-focus-visible:animate-cursor-blink group-focus-visible:border-r-2 group-focus-visible:pr-[1px]"
 							>
-								Resume <ExternalLink class="h-4" />
+								Resume
+							</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://github.com/newtonyan"
+						target="_blank"
+						rel="noreferrer nofollow"
+						class="group focus-visible:outline-none"
+					>
+						<div class="group-hover:bg-accent group-focus-visible:bg-accent">
+							<span
+								class="inline-flex items-center group-hover:animate-cursor-blink group-hover:border-r-2 group-focus-visible:animate-cursor-blink group-focus-visible:border-r-2 group-focus-visible:pr-[1px]"
+							>
+								GitHub
+							</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/newton-yan-7a6722199/"
+						target="_blank"
+						rel="noreferrer nofollow"
+						class="group focus-visible:outline-none"
+					>
+						<div class="group-hover:bg-accent group-focus-visible:bg-accent">
+							<span
+								class="inline-flex items-center group-hover:animate-cursor-blink group-hover:border-r-2 group-focus-visible:animate-cursor-blink group-focus-visible:border-r-2 group-focus-visible:pr-[1px]"
+							>
+								LinkedIn
 							</span>
 						</div>
 					</a>

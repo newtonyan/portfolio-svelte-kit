@@ -45,7 +45,7 @@
 			<SheetContent size="full" position="left" class="bg-background">
 				<div class="p-4">
 					<Nav {menuGroups} bind:dialogOpen={open} />
-					<SocialMedia class="mt-8" />
+					<!-- <SocialMedia class="mt-8" /> -->
 				</div>
 			</SheetContent>
 		</Sheet>
