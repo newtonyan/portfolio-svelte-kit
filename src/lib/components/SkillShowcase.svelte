@@ -10,7 +10,9 @@
 	export let list: Stack[];
 </script>
 
-<div class={`not-prose grid grid-cols-1 gap-8 rounded-lg bg-code p-8 sm:grid-cols-5`}>
+<div
+	class={`not-prose grid grid-cols-1 gap-8 rounded-lg border-2 border-accent bg-code p-8 sm:grid-cols-5`}
+>
 	{#each list as skill}
 		{@const icon = skill.icon[$colorTheme] ?? skill.icon.light}
 		{@const attributes = skill.website ? { target: "_blank", rel: "nofollow noreferrer" } : {}}

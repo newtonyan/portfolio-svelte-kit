@@ -29,7 +29,7 @@
 
 		--shiki-color-text: hsl(248, 19%, 40%);
 		/* --shiki-color-background: hsl(32, 57%, 95%); original theme color */
-		--shiki-color-background: hsl(287, 20%, 95%);
+		--shiki-color-background: hsl(287, 8%, 95%);
 		--shiki-token-constant: hsl(248, 19%, 40%);
 		--shiki-token-string: hsl(35, 81%, 56%);
 		--shiki-token-comment: hsl(257, 9%, 61%);
