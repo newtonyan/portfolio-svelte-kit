@@ -14,7 +14,16 @@ description: Discover my professional journey and work experience as a web devel
 
 # Work Experience
 
-Akex Solutions Inc. `(Aug 2023 - Present)`
+Belun Technology Company Limited `(Apr 2024 - Present)`
+
+```js
+workExperience.push({
+	location: "Canada (Remote)",
+	title: "Senior Programmer Analyst"
+});
+```
+
+Akex Solutions Inc. `(Aug 2023 - Apr 2024)`
 
 ```js
 workExperience.push({
